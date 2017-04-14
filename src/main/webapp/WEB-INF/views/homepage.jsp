@@ -108,7 +108,7 @@ $(document).ready(function(){
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
             <li><a href="index.jsp">Home</a></li>
-            <li><a href="about.jsp">About</a></li>
+            <li><a href="http://localhost:8080/springapp/about">About</a></li>
     		<li class="dropdown mega-dropdown active">
 			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions<span class="caret"></span></a>				
 				<div class="dropdown-menu mega-dropdown-menu">
