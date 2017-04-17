@@ -52,7 +52,7 @@ $(document).ready(function(){
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
 	        <ul class="nav navbar-nav ">
 		        <li class="dropdown">
-		            <a href="login.jsp"><i class="fa fa-user"></i><span>Login</span></a>
+		            <a href="http://localhost:8080/springapp/login"><i class="fa fa-user"></i><span>Login</span></a>
 		        </li>
 		        <li class="dropdown">
 		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Courses</span></a>
@@ -142,7 +142,7 @@ $(document).ready(function(){
                    </ul>                    
 				</div>				
 			</li>
-			<li><a href="faculty.html">Faculty</a></li>
+			<li><a href="http://localhost:8080/springapp/companydetail">Faculty</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
