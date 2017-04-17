@@ -54,29 +54,8 @@ $(document).ready(function(){
 		        <li class="dropdown">
 		            <a href="http://localhost:8080/springapp/login"><i class="fa fa-user"></i><span>Login</span></a>
 		        </li>
-		        <li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Courses</span></a>
-		        	  <ul class="dropdown-menu">
-			            <li><a href="courses.html">Courses Categories</a></li>
-			            <li><a href="courses.html">Courses list</a></li>
-			            <li><a href="course_detail.html">Courses detail</a></li>
-		              </ul>
-		        </li>
-		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Events</span></a>
-		             <ul class="dropdown-menu">
-			            <li><a href="events.html">Event1</a></li>
-			            <li><a href="events.html">Event2</a></li>
-			            <li><a href="events.html">Event3</a></li>
-		             </ul>
-		        </li>
-		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>English</span></a>
-		            <ul class="dropdown-menu">
-			            <li><a href="#"><span><i class="flags us"></i><span>English</span></span></a></li>
-			            <li><a href="#"><span><i class="flags newzland"></i><span>Newzland</span></span></a></li>
-			        </ul>
-		        </li>
+		        
+		        
 		        <li class="dropdown">
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
 		            <ul class="dropdown-menu search-form">
@@ -84,6 +63,13 @@ $(document).ready(function(){
                             <input type="text" class="search-text" name="s" placeholder="Search...">    
                             <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
                        </form>
+			        </ul>
+		        </li>
+		        <li class="dropdown">
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>English</span></a>
+		            <ul class="dropdown-menu">
+			            <li><a href="#"><span><i class="flags us"></i><span>English</span></span></a></li>
+			            <li><a href="#"><span><i class="flags newzland"></i><span>Newzland</span></span></a></li>
 			        </ul>
 		        </li>
 		    </ul>
@@ -107,20 +93,20 @@ $(document).ready(function(){
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
-            <li><a href="index.jsp">Home</a></li>
-            <li><a href="http://localhost:8080/springapp/about">About</a></li>
+            <li><a href="homepage.jsp">Trang chủ</a></li>
+            
     		<li class="dropdown mega-dropdown active">
-			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions<span class="caret"></span></a>				
+			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ý tưởng khởi nghiệp<span class="caret"></span></a>				
 				<div class="dropdown-menu mega-dropdown-menu">
                     <div class="container-fluid">
     				    <!-- Tab panes -->
                         <div class="tab-content">
                           <div class="tab-pane active" id="men">
                             <ul class="nav-list list-inline">
-                                <li><a href="admission.html"><img src="resources/images/t7.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/images/t8.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/images/t9.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/views/images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/t7.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/t8.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/images/t9.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href="#"><img src="resources/views/images/t1.jpg" class="img-responsive" alt=""/></a></li>
                             </ul>
                           </div>
                           <div class="tab-pane" id="women">
@@ -142,19 +128,17 @@ $(document).ready(function(){
                    </ul>                    
 				</div>				
 			</li>
-			<li><a href="http://localhost:8080/springapp/companydetail">Faculty</a></li>
+			
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doanh Nghiệp<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="terms.html">Terms of use</a></li>
-                <li><a href="shortcodes.html">Shortcodes</a></li>
-                <li><a href="faq.html">Faq</a></li>
+                <li><a href="#">Danh sách các danh nghiệp</a></li>
+                <li><a href="#">Doanh sách các ngành nghề</a></li>
+                
               </ul>
             </li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="career.html">Career</a></li>
+            
+        
             <li class="last"><a href="contact.html">Contacts</a></li>
         </ul>
      </div><!-- /.navbar-collapse -->
