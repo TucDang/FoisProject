@@ -3,7 +3,7 @@
 
 <html>
 <head>
-<title>Company Detail</title>
+<title>Home</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
 <meta name="keywords" content="Learn Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
@@ -44,129 +44,7 @@ $(document).ready(function(){
 <!----End Calender -------->
 </head>
 <body>
-<nav class="navbar navbar-default" role="navigation">
-	<div class="container">
-	    <div class="navbar-header">
-	        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-	        </button>
-	         <a class="navbar-brand" href="index.html">Learn</a>
-	    </div>
-	    <!--/.navbar-header-->
-	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
-	        <ul class="nav navbar-nav">
-		        <li class="dropdown">
-		            <a href="login.html"><i class="fa fa-user"></i><span>Login</span></a>
-		        </li>
-		        <li class="dropdown">
-		        	<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-list"></i><span>Courses</span></a>
-		        	   <ul class="dropdown-menu">
-			            <li><a href="courses.html">Courses Categories</a></li>
-			            <li><a href="courses.html">Courses list</a></li>
-			            <li><a href="courses.html">Courses detail</a></li>
-		              </ul>
-		        </li>
-		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-calendar"></i><span>Events</span></a>
-		             <ul class="dropdown-menu">
-			            <li><a href="events.html">Event1</a></li>
-			            <li><a href="events.html">Event2</a></li>
-			            <li><a href="events.html">Event3</a></li>
-		             </ul>
-		        </li>
-		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>English</span></a>
-		            <ul class="dropdown-menu">
-			            <li><a href="#"><span><i class="flags us"></i><span>English</span></span></a></li>
-			            <li><a href="#"><span><i class="flags newzland"></i><span>Newzland</span></span></a></li>
-			        </ul>
-		        </li>
-		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
-		            <ul class="dropdown-menu search-form">
-			           <form>        
-                            <input type="text" class="search-text" name="s" placeholder="Search...">    
-                            <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-                       </form>
-			        </ul>
-		        </li>
-		     </ul>
-	    </div>
-	    <div class="clearfix"> </div>
-	  </div>
-	    <!--/.navbar-collapse-->
-</nav>
-<nav class="navbar nav_bottom" role="navigation">
- <div class="container">
-  <!-- Brand and toggle get grouped for better mobile display -->
-    <div class="navbar-header nav_2">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-megadropdown-tabs">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="#"></a>
-    </div> 
-    <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-        <ul class="nav navbar-nav nav_1">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-    		<li class="dropdown mega-dropdown active">
-			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Admissions<span class="caret"></span></a>				
-				<div class="dropdown-menu mega-dropdown-menu">
-                    <div class="container-fluid">
-    				    <!-- Tab panes -->
-                        <div class="tab-content">
-                          <div class="tab-pane active" id="men">
-                            <ul class="nav-list list-inline">
-                                <li><a href="admission.html"><img src="images/t7.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t8.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t9.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
-                            </ul>
-                          </div>
-                          <div class="tab-pane" id="women">
-                            <ul class="nav-list list-inline">
-                                <li><a href="admission.html"><img src="images/t1.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t2.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t3.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t4.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t5.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="images/t6.jpg" class="img-responsive" alt=""/></a></li>
-                            </ul>
-                          </div>
-                        </div>
-                    </div>
-                    <!-- Nav tabs -->
-                    <ul class="nav nav-tabs" role="tablist">
-                       <li class="active"><a href="#men" role="tab" data-toggle="tab">School</a></li>
-                       <li><a href="#women" role="tab" data-toggle="tab">College</a></li>
-                    </ul>                    
-				</div>				
-			</li>
-			<li><a href="faculty.html">Faculty</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Programs<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="terms.html">Terms of use</a></li>
-                <li><a href="shortcodes.html">Shortcodes</a></li>
-                <li><a href="faq.html">Faq</a></li>
-              </ul>
-            </li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="features.html">Features</a></li>
-            <li><a href="blog.html">Blog</a></li>
-            <li><a href="career.html">Career</a></li>
-            <li class="last"><a href="contact.html">Contacts</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-   </div>
-</nav>
+<%@ include file="_header.jsp" %>
 <!-- banner -->
   <div class="courses_banner">
   	<div class="container">
@@ -229,11 +107,11 @@ $(document).ready(function(){
                     </select>
                 </div>
                 <!-- select-block -->
-                <input type="submit" value="search" class="course-submit">		                            
+                <input type="submit" value="Tìm kiếm" class="course-submit">		                            
             </form>
 	       </div>
 	       <div class="social-widget">
-          	<h2>Connect with us</h2>
+          	<h2>Kênh liên hệ</h2>
           	  <ul class="courses_social">
 				<li class="facebook-icon">
 					<div>
@@ -282,11 +160,11 @@ $(document).ready(function(){
 				 </div>
 	      </section>
 	      <ul class="posts">
-	      	<h3>Recent Posts</h3>
+	      	<h3>Bài liên quan</h3>
 			<li>
 				<article class="entry-item">
 					<div class="entry-thumb pull-left">
-						<img src="images/t17.jpg" class="img-responsive" alt=""/>
+						<img src="resources/images/t17.jpg" class="img-responsive" alt=""/>
 					</div>
 					<div class="entry-content">
 						<h6><a href="#">Established</a></h6>
@@ -298,7 +176,7 @@ $(document).ready(function(){
 			<li>
 				<article class="entry-item">
 					<div class="entry-thumb pull-left">
-						<img src="images/t7.jpg" class="img-responsive" alt=""/>
+						<img src="resources/images/t7.jpg" class="img-responsive" alt=""/>
 					</div>
 					<div class="entry-content">
 						<h6><a href="#">Established</a></h6>
@@ -310,7 +188,7 @@ $(document).ready(function(){
 			<li>
 				<article class="entry-item">
 					<div class="entry-thumb pull-left">
-						<img src="images/t16.jpg" class="img-responsive" alt=""/>
+						<img src="resources/images/t16.jpg" class="img-responsive" alt=""/>
 					</div>
 					<div class="entry-content">
 						<h6><a href="#">Established</a></h6>
@@ -322,7 +200,7 @@ $(document).ready(function(){
          </ul>
 		</div>
 		<div class="col-md-8 detail">
-	       <img src="images/event.jpg" class="img-responsive" alt=""/>
+	       <img src="resources/images/event.jpg" class="img-responsive" alt=""/>
 	       <h3>Event Title</h3>
 	        <ul class="meta-post">
                 <li class="author">
@@ -337,7 +215,7 @@ $(document).ready(function(){
            </ul>
            <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
            <div class="author-box author-box1">
-                  <div class="author-box-left"><img src="images/t13.png" class="img-responsive" alt=""/></div>
+                  <div class="author-box-left"><img src="resources/images/t13.png" class="img-responsive" alt=""/></div>
 				  <div class="author-box-right">		
 					<h4>Author by <a href="#">admin</a></h4>
                     <p>Lorem ipsum doldor sit amet, consectetur adeipiscing elit, sed do eiusmod temdpor incididuent ut labore et doelore magna aliqua.. Lorem ipsum doldor sit amet, consectetur adeipiscing elit, sed do eiusmod temdpor incididuent ut labore et doelore magna aliqua..</p>
@@ -345,11 +223,11 @@ $(document).ready(function(){
 				  <div class="clearfix"> </div>
 			 </div>
 			 <div class="comment_section">
-			 	<h4>3 Comments</h4>
+			 	<h4>3 Bình luận</h4>
 			 	<ul class="comment-list">
                    <li>
 				     <div class="author-box">
-				       <div class="author-box_left"><img src="images/t13.png" class="img-responsive" alt=""/></div>
+				       <div class="author-box_left"><img src="resources/images/t13.png" class="img-responsive" alt=""/></div>
 				       <div class="author-box_right">
 				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
 			            <span class="m_1">Jul 07, 2015 - 4:48 am Nov 15, 2015 - 08:07 pm</span>
@@ -361,7 +239,7 @@ $(document).ready(function(){
 				  </li>
                   <li>
 				     <div class="author-box">
-				       <div class="author-box_left"><img src="images/author.png" class="img-responsive" alt=""/></div>
+				       <div class="author-box_left"><img src="resources/images/author.png" class="img-responsive" alt=""/></div>
 				       <div class="author-box_right">
 				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
 			            <span class="m_1">Jul 07, 2015 - 4:48 am Nov 15, 2015 - 08:07 pm</span>
@@ -374,7 +252,7 @@ $(document).ready(function(){
                   <ul class="children">
                     <li>
 				     <div class="author-box">
-				       <div class="author-box_left"><img src="images/author.png" class="img-responsive" alt=""/></div>
+				       <div class="author-box_left"><img src="resources/images/author.png" class="img-responsive" alt=""/></div>
 				       <div class="author-box_right">
 				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
 			            <span class="m_1">Jul 07, 2015 - 4:48 am Nov 15, 2015 - 08:07 pm</span>
@@ -388,17 +266,17 @@ $(document).ready(function(){
               </ul>
 			 </div>
 			 <form class="comment-form">
-			 	<h4>Leave a comment</h4>
+			 	<h4>Viết bình luận</h4>
 				  <div class="col-md-6 comment-form-left">
-					<input type="text" placeholder="Your Name" value="" id="author" name="author" class="form-control">
-	                <input type="text" class="form-control" placeholder="Your Email" value="" id="email" name="email">
+					<input type="text" placeholder="Họ và tên" value="" id="author" name="author" class="form-control">
+	                <input type="text" class="form-control" placeholder="Địa chỉ Email" value="" id="email" name="email">
 	              </div>
 				  <div class="col-md-6 comment-form-right">
-					<textarea name="comment" aria-required="true" id="comment" class="form-control" placeholder="Comment"></textarea>
+					<textarea name="comment" aria-required="true" id="comment" class="form-control" placeholder="Bình luận"></textarea>
 				  </div>
 				  <div class="clearfix"> </div>						
 				  <div class="form-submit">
-				  	<input name="submit" type="submit" id="submit" class="submit_1 btn btn-primary btn-block" value="Add comment"> 
+				  	<input name="submit" type="submit" id="submit" class="submit_1 btn btn-primary btn-block" value="Thêm dsfdsfbình luận"> 
 				  </div>	  
            </form>
 		 </div>
@@ -482,8 +360,8 @@ $(document).ready(function(){
     	</div>
     </div>
 <!-- FlexSlider -->
-<link href="css/flexslider.css" rel='stylesheet' type='text/css' />
-  <script defer src="js/jquery.flexslider.js"></script>
+<link href="resources/css/flexslider.css" rel='stylesheet' type='text/css' />
+  <script defer src="resources/js/jquery.flexslider.js"></script>
   <script type="text/javascript">
 	$(function(){
 	  SyntaxHighlighter.all();
