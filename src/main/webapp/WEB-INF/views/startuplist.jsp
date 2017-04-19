@@ -174,7 +174,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<!-- banner -->
 	<div class="courses_banner">
 		<div class="container">
-			<h3>Danh sach khoi nghiep</h3>
+			<h3>Danh sách khởi nghiệp</h3>
 			<p class="description"> Khởi nghiệp là một trong những xu hướng lớn
 			hiện nay, dưới đây là những danh sách các nhà khởi nghiệp và thông
 			tin về họ.</p>
