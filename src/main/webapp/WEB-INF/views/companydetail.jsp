@@ -201,7 +201,7 @@ $(document).ready(function(){
 		</div>
 		<div class="col-md-8 detail">
 	       <img src="resources/images/event.jpg" class="img-responsive" alt=""/>
-	       <h3>Event Title</h3>
+	       <h3>Thông Tin Công Ty</h3>
 	        <ul class="meta-post">
                 <li class="author">
                     by <a href="#">Admin</a>
@@ -213,57 +213,108 @@ $(document).ready(function(){
                     Conference Hall
                 </li>                             
            </ul>
-           <p>"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
-           <div class="author-box author-box1">
-                  <div class="author-box-left"><img src="resources/images/t13.png" class="img-responsive" alt=""/></div>
-				  <div class="author-box-right">		
-					<h4>Author by <a href="#">admin</a></h4>
-                    <p>Lorem ipsum doldor sit amet, consectetur adeipiscing elit, sed do eiusmod temdpor incididuent ut labore et doelore magna aliqua.. Lorem ipsum doldor sit amet, consectetur adeipiscing elit, sed do eiusmod temdpor incididuent ut labore et doelore magna aliqua..</p>
-				  </div>
-				  <div class="clearfix"> </div>
-			 </div>
+           <p>"Công ty Cổ Phần Đầu Tư Hạ Tầng Kỹ Thuật Thành phố Hồ Chí Minh (CII) là tổ chức đầu tư tài chính, hoạt động theo mô hình công ty cổ phần đại chúng, được thành lập năm 2001 để góp phầnthực hiện chủ trương xã hội hóa đầu tư hạ tầng của UBND TP.HCM. Sang năm 2013, với tốc độ tăng trưởng cao và hàng loạt các dự án đầu tư được triển khai, mô hình quản trị ban đầu không còn phù hợp nữa, CII quyết định tiến hành quá trình tái cấu trúc theo mô hình tập đoàn, đồng thời thực hiện tái cấu trúc tài chính. CII đã thành lập các công ty thành viên chuyên trách các mảng hoạt động dầu tư về hạ tầng bao gồm:"</p>
+           
 			 <div class="comment_section">
-			 	<h4>3 Bình luận</h4>
-			 	<ul class="comment-list">
-                   <li>
-				     <div class="author-box">
-				       <div class="author-box_left"><img src="resources/images/t13.png" class="img-responsive" alt=""/></div>
-				       <div class="author-box_right">
-				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
-			            <span class="m_1">Jul 07, 2015 - 4:48 am Nov 15, 2015 - 08:07 pm</span>
-			            <p>There are many variations of passages of Lorem Ipsum</p>
-				
-				      </div> 
-				      <div class="clearfix"> </div>
-				     </div>
-				  </li>
-                  <li>
-				     <div class="author-box">
-				       <div class="author-box_left"><img src="resources/images/author.png" class="img-responsive" alt=""/></div>
-				       <div class="author-box_right">
-				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
-			            <span class="m_1">Jul 07, 2015 - 4:48 am Nov 15, 2015 - 08:07 pm</span>
-			            <p>There are many variations of passages of Lorem Ipsum</p>
-				
-				      </div> 
-				      <div class="clearfix"> </div>
-				     </div>
-				  </li>
-                  <ul class="children">
-                    <li>
-				     <div class="author-box">
-				       <div class="author-box_left"><img src="resources/images/author.png" class="img-responsive" alt=""/></div>
-				       <div class="author-box_right">
-				        <h5><a href="#">Admin</a><span class="pull-right"><a class="comment-reply-link" href="#">Reply</a></span></h5>
-			            <span class="m_1">Jul 07, 2015 - 4:48 am Nov 15, 2015 - 08:07 pm</span>
-			            <p>There are many variations of passages of Lorem Ipsum</p>
-				
-				      </div> 
-				      <div class="clearfix"> </div>
-				     </div>
-				  </li>
-				</ul>
-              </ul>
+			 	<div class="bottom_content">  
+   	 <h3>CÔNG VIỆC NỔI BẬT</h3>
+     <div class="grid_2">
+     	<div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="resources/images/t15.jpg" class="img-responsive" alt=""/>
+                <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lorem Ipsum</a></h4>
+               <p>Mauris diam ma</p>
+                
+                <a href="events.html">
+                    <span>Xem thêm</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="resources/images/t10.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lorem Ipsum</a></h4>
+               <p>Mauris diam ma</p>
+              
+                <a href="events.html">
+                    <span>Xem thêm</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="resources/images/t12.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lorem Ipsum</a></h4>
+               <p>Mauris diam ma</p>
+               
+                <a href="events.html">
+                     <span>Xem thêm</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+     </div>
+     <div class="grid_3">
+     	<div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="resources/images/t11.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lorem Ipsum</a></h4>
+               <p>Mauris diam ma</p>
+               
+                <a href="events.html">
+                   <span>Xem thêm</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="resources/images/t14.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lorem Ipsum</a></h4>
+               <p>Mauris diam ma</p>
+               
+                <a href="events.html">
+                    <span>Xem thêm</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="col-md-4 portfolio-left">
+            <div class="portfolio-img event-img">
+                <img src="resources/images/t13.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
+            </div>
+            <div class="portfolio-description">
+               <h4><a href="#">Lorem Ipsum</a></h4>
+               <p>Mauris diam ma</p>
+               
+                <a href="events.html">
+                  <span>Xem thêm</span>
+                </a>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+        <div class="clearfix"> </div>
+     </div>
+    </div>
 			 </div>
 			 <form class="comment-form">
 			 	<h4>Viết bình luận</h4>
