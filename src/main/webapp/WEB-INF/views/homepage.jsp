@@ -46,18 +46,18 @@ $(document).ready(function(){
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="index.jsp">Learn</a>
+	        <a class="navbar-brand" href="homepage.jsp">Learn</a>
 	    </div>
 	    <!--/.navbar-header-->
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
 	        <ul class="nav navbar-nav ">
 		        <li class="dropdown">
-		            <a href="http://localhost:8080/springapp/login"><i class="fa fa-user"></i><span>Login</span></a>
+		            <a href="login"><i class="fa fa-user"></i><span>Đăng nhập</span></a>
 		        </li>
 		        
 		        
 		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Search</span></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Tìm kiếm</span></a>
 		            <ul class="dropdown-menu search-form">
 			           <form>        
                             <input type="text" class="search-text" name="s" placeholder="Search...">    
@@ -66,10 +66,11 @@ $(document).ready(function(){
 			        </ul>
 		        </li>
 		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>English</span></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Việt Nam</span></a>
 		            <ul class="dropdown-menu">
+			            <li><a href="#"><span><i class="flags vietnam"></i><span>Việt Nam</span></span></a></li>
 			            <li><a href="#"><span><i class="flags us"></i><span>English</span></span></a></li>
-			            <li><a href="#"><span><i class="flags newzland"></i><span>Newzland</span></span></a></li>
+			            <li><a href="#"><span><i class="flags japan"></i><span>Japan</span></span></a></li>
 			        </ul>
 		        </li>
 		    </ul>
@@ -139,7 +140,7 @@ $(document).ready(function(){
             </li>
             
         
-            <li class="last"><a href="contact.html">Contacts</a></li>
+            <li class="last"><a href="contact">Liên hệ</a></li>
         </ul>
      </div><!-- /.navbar-collapse -->
    </div>
@@ -246,31 +247,37 @@ $(document).ready(function(){
 		 <div class="col-sm-10 dropdown-buttons">   
 			<div class="col-sm-3 dropdown-button">           			
     		  <div class="input-group">
-                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Name" type="text" required="">
+                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Từ khóa" type="text" required="">
               </div>
 			</div>
-			<div class="col-sm-3 dropdown-button">           			
-    		  <div class="input-group">
-                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Email" type="text" required="">
-              </div>
+			  <div class="col-sm-3 dropdown-button">           			
+    		  <div class="section_1">
+				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
+					<option value="null">Đối tượng</option>
+					<option value="null">Ý tưởng</option>         
+					<option value="AX">Khởi nghiệp</option>
+					
+				 </select>
+			  </div>
 			</div>
     	   <div class="col-sm-3 dropdown-button">           			
     		  <div class="section_1">
 				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
-					<option value="null">Learn Level</option>
-					<option value="null">Bignner</option>         
-					<option value="AX">Advanced</option>
-					<option value="AX">Intermediate</option>
+					<option value="null">Lĩnh vực</option>
+					<option value="null">IT</option>         
+					<option value="AX">Tài chính</option>
+					<option value="AX">Môi trường</option>
+					<option value="AX">Nhà đất</option>
 				 </select>
 			  </div>
 			</div>
 		     <div class="col-sm-3 dropdown-button">
 			  <div class="section_1">
 				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
-					<option value="null">Courses</option>
-					<option value="null">Finance</option>         
-					<option value="AX">Marketing</option>
-					<option value="AX">Science</option>
+					<option value="null">Địa điểm</option>
+					<option value="null">TP.HCM</option>         
+					<option value="AX">Hà Nội</option>
+					<option value="AX">Đà Nẵng</option>
 				 </select>
 			  </div>
 			 </div>
@@ -278,7 +285,7 @@ $(document).ready(function(){
 		  </div> 
 		  <div class="col-sm-2 submit_button"> 
 		   	  <form>
-		   	     <input type="submit" value="Search">
+		   	     <input type="submit" value="TÌM KIẾM">
 		   	  </form>
 		   </div>
 		   <div class="clearfix"> </div>
@@ -288,7 +295,7 @@ $(document).ready(function(){
      	<div class="container">
      		<div class="col-md-4">
                 <div class="news">
-                    <h1>News</h1>
+                    <h1>Tin tức mới nhất</h1>
                     <div class="section-content">
                         <article>
                             <figure class="date"><i class="fa fa-file-o"></i>07-25-2015</figure>
@@ -308,17 +315,17 @@ $(document).ready(function(){
                         </article>
                         
                     </div><!-- /.section-content -->
-                    <a href="#" class="read-more">All News</a>
+                    <a href="#" class="read-more">Tất cả</a>
                 </div><!-- /.news-small -->
             </div>
             <div class="col-md-8 grid_1_right">
-              <h2>Programs</h2>
+              <h2>Tin tức nổi bật</h2>
 		      <div class="but_list">
 		       <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 				<ul id="myTab" class="nav nav-tabs nav-tabs1" role="tablist">
-				  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Day 1&nbsp;&nbsp;&nbsp;31-08-2015</a></li>
-				  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Day 2&nbsp;&nbsp;&nbsp;01-09-2015</a></li>
-				  <li role="presentation"><a href="#profile1" role="tab" id="profile-tab1" data-toggle="tab" aria-controls="profile1">Day 3&nbsp;&nbsp;&nbsp;05-09-2015</a></li>
+				  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Doanh nghiệp</a></li>
+				  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Ý tưởng hay</a></li>
+				  
 				</ul>
 			<div id="myTabContent" class="tab-content">
 			  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
@@ -339,7 +346,7 @@ $(document).ready(function(){
 			    	<div class="event_right">
 			    		  <h3><a href="#">Welcoming and introduction</a></h3>
 						  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <a href="#">Read More</a></p>
-						  <img src="images/t9.jpg" class="img-responsive" alt=""/>	
+						  <img src="resources/images/t9.jpg" class="img-responsive" alt=""/>	
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			   </div>
@@ -383,7 +390,7 @@ $(document).ready(function(){
 			    	<div class="event_right">
 			    		  <h3><a href="#">Welcoming and introduction</a></h3>
 						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form <a href="#">Read More</a></p>
-						  <img src="images/t8.jpg" class="img-responsive" alt=""/>	
+						  <img src="resources/images/t8.jpg" class="img-responsive" alt=""/>	
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			   </div>
@@ -404,7 +411,7 @@ $(document).ready(function(){
 			    	<div class="event_right">
 			    		  <h3><a href="#">Welcoming and introduction</a></h3>
 						  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature <a href="#">Read More</a></p>
-						  <img src="images/t2.jpg" class="img-responsive" alt=""/>	
+						  <img src="resources/images/t2.jpg" class="img-responsive" alt=""/>	
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			   </div>
@@ -427,7 +434,7 @@ $(document).ready(function(){
 			    	<div class="event_right">
 			    		  <h3><a href="#">Welcoming and introduction</a></h3>
 						  <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings <a href="#">Read More</a></p>
-						  <img src="images/t7.jpg" class="img-responsive" alt=""/>	
+						  <img src="resources/images/t7.jpg" class="img-responsive" alt=""/>	
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			   </div>
@@ -448,7 +455,7 @@ $(document).ready(function(){
 			    	<div class="event_right">
 			    		  <h3><a href="#">Welcoming and introduction</a></h3>
 						  <p>Vestibulum id ligula porta felis euismod semper. Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla. Aenean lacinia bibendum nulla sed consectetur.... <a href="#">Read More</a></p>
-						  <img src="images/t4.jpg" class="img-responsive" alt=""/>	
+						  <img src="resources/images/t4.jpg" class="img-responsive" alt=""/>	
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			    </div>
@@ -474,11 +481,11 @@ $(document).ready(function(){
         </div>
    </div>
    <div class="bottom_content">  
-   	 <h3>Our Projects</h3>
+   	 <h3>CÔNG VIỆC NỔI BẬT</h3>
      <div class="grid_2">
      	<div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="images/t15.jpg" class="img-responsive" alt=""/>
+                <img src="resources/images/t15.jpg" class="img-responsive" alt=""/>
                 <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
@@ -496,7 +503,7 @@ $(document).ready(function(){
         </div>
         <div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="images/t10.jpg" class="img-responsive" alt=""/>
+                <img src="resources/images/t10.jpg" class="img-responsive" alt=""/>
                  <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
@@ -514,7 +521,7 @@ $(document).ready(function(){
         </div>
         <div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="images/t12.jpg" class="img-responsive" alt=""/>
+                <img src="resources/images/t12.jpg" class="img-responsive" alt=""/>
                  <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
@@ -535,7 +542,7 @@ $(document).ready(function(){
      <div class="grid_3">
      	<div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="images/t11.jpg" class="img-responsive" alt=""/>
+                <img src="resources/images/t11.jpg" class="img-responsive" alt=""/>
                  <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
@@ -553,7 +560,7 @@ $(document).ready(function(){
         </div>
         <div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="images/t14.jpg" class="img-responsive" alt=""/>
+                <img src="resources/images/t14.jpg" class="img-responsive" alt=""/>
                  <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
@@ -571,7 +578,7 @@ $(document).ready(function(){
         </div>
         <div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="images/t13.jpg" class="img-responsive" alt=""/>
+                <img src="resources/images/t13.jpg" class="img-responsive" alt=""/>
                  <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
@@ -593,7 +600,7 @@ $(document).ready(function(){
     <div class="footer">
     	<div class="container">
     		<div class="col-md-3 grid_4">
-    		   <h3>About Us</h3>	
+    		   <h3>Về Chúng Tôi</h3>	
     		   <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.."</p>
     		      <ul class="social-nav icons_2 clearfix">
                     <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a></li>
@@ -602,7 +609,7 @@ $(document).ready(function(){
                  </ul>
     		</div>
     		<div class="col-md-3 grid_4">
-    		   <h3>Quick Links</h3>
+    		   <h3>Liên kết nhanh</h3>
     			<ul class="footer_list">
     				<li><a href="#">-  PRIOR LEARNING ASSESSMENT </a></li>
     				<li><a href="#">-  INTERNATIONAL STUDENTS</a></li>
@@ -612,7 +619,7 @@ $(document).ready(function(){
     			</ul>
     		</div>
     		<div class="col-md-3 grid_4">
-    		   <h3>Contact Us</h3>
+    		   <h3>Kết nối với chúng tôi</h3>
     			<address>
                     <strong>Contrary to popular belief</strong>
                     <br>
@@ -626,7 +633,7 @@ $(document).ready(function(){
                </address>
     		</div>
     		<div class="col-md-3 grid_4">
-    		   <h3>Working Hours</h3>
+    		   <h3>Lịch làm việc</h3>
     			 <table class="table_working_hours">
 		        	<tbody>
 		        		<tr class="opened_1">

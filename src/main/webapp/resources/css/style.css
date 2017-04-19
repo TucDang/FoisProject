@@ -150,9 +150,13 @@ i.flags{
 i.us{
    background: url("../images/f1.jpg") no-repeat;
 }
-i.newzland{
-	background: url("../images/f2.jpg") no-repeat;
+i.vietnam{
+	background: url("../images/f2.png") no-repeat;
 }
+i.japan{
+	background: url("../images/f3.png") no-repeat;
+}
+
 .search-form {
     background-color:#f1b458;
     display: none;
