@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 
@@ -182,4 +182,3 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	        </div>
     	</div>
     </div>
->>>>>>> origin/master

@@ -2,10 +2,7 @@ package com.example.controllers;
 
 
 import org.springframework.stereotype.Controller;
-<<<<<<< HEAD
-=======
 
->>>>>>> origin/master
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
