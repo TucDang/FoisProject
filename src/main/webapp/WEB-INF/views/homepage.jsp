@@ -161,9 +161,7 @@ $(document).ready(function(){
      </div><!-- /.navbar-collapse -->
    </div>
 </nav>
-=======
-<%@include file="_header.jsp" %>
->>>>>>> origin/master
+
 <!-- banner -->
 	<div class="banner">
 			<!-- banner Slider starts Here -->
@@ -610,7 +608,6 @@ $(document).ready(function(){
         <div class="clearfix"> </div>
      </div>
     </div>
-<<<<<<< HEAD
     <div class="footer">
     	<div class="container">
     		<div class="col-md-3 grid_4">
@@ -687,7 +684,12 @@ $(document).ready(function(){
 	        </div>
     	</div>
     </div>
+<<<<<<< HEAD
    <%@include file="_footer.jsp" %>
+=======
+
+
+>>>>>>> origin/master
 <script src="resources/js/jquery.countdown.js"></script>
 <script src="resources/js/script.js"></script>
 
