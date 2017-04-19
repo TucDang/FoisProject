@@ -389,7 +389,7 @@ $(document).ready(function(){
                   <a href="students.html">College Studies</a>
                 </span>
                 <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
@@ -407,7 +407,7 @@ $(document).ready(function(){
                   <a href="students.html">College Studies</a>
                 </span>
                 <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
@@ -425,7 +425,7 @@ $(document).ready(function(){
                   <a href="students.html">College Studies</a>
                 </span>
                 <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
@@ -446,7 +446,7 @@ $(document).ready(function(){
                   <a href="students.html">College Studies</a>
                 </span>
                 <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
@@ -464,7 +464,7 @@ $(document).ready(function(){
                   <a href="students.html">College Studies</a>
                 </span>
                 <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
@@ -482,7 +482,7 @@ $(document).ready(function(){
                   <a href="students.html">College Studies</a>
                 </span>
                 <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
+                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
