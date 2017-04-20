@@ -11,7 +11,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="homepage.jsp">Learn</a>
+	        <a class="navbar-brand" href="homepage.jsp">New World</a>
 	    </div>
 	    <!--/.navbar-header-->
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
@@ -89,8 +89,8 @@
                     </div>
                     <!-- Nav tabs -->
                     <ul class="nav nav-tabs" role="tablist">
-                       <li class="active"><a href="#men" role="tab" data-toggle="tab">School</a></li>
-                       <li><a href="#women" role="tab" data-toggle="tab">College</a></li>
+                       <li class="active"><a href="#men" role="tab" data-toggle="tab">Dự án ngắn hạn</a></li>
+                       <li><a href="#women" role="tab" data-toggle="tab">Dự án dài hạn</a></li>
                    </ul>                    
 				</div>				
 			</li>

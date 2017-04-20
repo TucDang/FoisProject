@@ -69,11 +69,11 @@ $(document).ready(function(){
 								<div class="banner-bg">
 									<div class="container">
 										<div class="banner-info">
-											<h3>Take the first step<span>to knowledge friends</span></h3>
-											<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch
-												playmakers, these kicks are ready to stand out.
+											<h3>Hãy đến với<span>chúng tôi</span></h3>
+											<p>Nơi những ý tưởng lớn gặp nhau, giúp các doanh nghiệp và những người có ý tưởng hay có thể kết nối với nhau. Từ đó đưa ra giải pháp hợp lý nhất cho cả 2.
+											Chúng tôi cung cấp những dịch vụ gần gũi nhất để có thể thực hiện điều đó.
 											</p>
-											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+											<a href="contact.jsp"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>XEM TẤT CẢ DỊCH VỤ</a>
 										</div>
 									</div>
 								</div>
@@ -82,11 +82,11 @@ $(document).ready(function(){
 								<div class="banner-bg banner-img2">
 									<div class="container">
 										<div class="banner-info">
-											<h3>Stay in touch<span>Lorem Ipsum</span></h3>
-											<p>Inspired by bold colors and matching up to football’s on-pitch
-												playmakers, these kicks are ready to stand out.
+											<h3>Những <span>ý tưởng lớn</span> hội tụ một nơi</h3>
+											<p>Là nơi chứa đựng những ý tưởng hay trên mọi lĩnh vực, là tiền đề để phát triển những công nghê mới.
+											Phát triển lợi ích xã hôi.
 											</p>
-											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+											<a href="startuplist.jsp"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>XEM TẤT CẢ Ý TƯỞNG</a>
 										</div>
 									</div>
 								</div>
@@ -95,11 +95,11 @@ $(document).ready(function(){
 								<div class="banner-bg banner-img">
 									<div class="container">
 										<div class="banner-info">
-											<h3>therefore always<span>looks reasonable</span></h3>
-											<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch
-												playmakers, these Brasil’s kicks are ready to stand out.
+											<h3><span>Doanh nghiệp</span>giới thiệu đến với mọi người</h3>
+											<p>Là nơi mà mỗi doanh nghiệp tạo cho mình một cơ hội để giới thiệu mình đến với thế giới.
+											Cơ hội lớn để tạo niềm tin trong mỗi người tiêu dùng, những người mang ý tưởng hay đến với doanh nghiệp.
 											</p>
-											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+											<a href="companylist.jsp"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>XEM TẤT CẢ CÁC DOANH NGHIỆP</a>
 										</div>
 									</div>
 								</div>
@@ -108,11 +108,11 @@ $(document).ready(function(){
 								<div class="banner-bg">
 									<div class="container">
 										<div class="banner-info">
-											<h3>dolore magna<span>eaque ipsa</span></h3>
-											<p>Inspired by bold colors and matching up to football’s on-pitch
-												playmakers, these kicks are ready to stand out.
+											<h3>Bạn muốn tìm kiếm<span>công việc</span></h3>
+											<p>Hãy đến đây, nơi mà thông tin công việc được cập nhật thường xuyên nhất. Tạo cho bạn một cơ hội để đến gần với những tập đoàn, doanh nghiệp hàng đầu.
+		
 											</p>
-											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+											<a href="joblist.jsp"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>CÔNG VIỆC NỔI BẬT</a>
 										</div>
 									</div>
 								</div>
@@ -121,11 +121,10 @@ $(document).ready(function(){
 								<div class="banner-bg banner-img2">
 									<div class="container">
 										<div class="banner-info">
-											<h3> trivial example,<span>who chooses</span></h3>
-											<p>Inspired by Brasil’s bold colors and matching up to football’s on-pitch
-												playmakers, these kicks Brasil’s are ready to stand out.
+											<h3> Hãy trở thành <span>thành viên </span>của chúng tôi.</h3>
+											<p>Nếu là thành viên của chúng tôi, bạn sẽ hưởng những dịch vụ của chúng tôi mang lại.
 											</p>
-											<a href="courses.html"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>View Courses</a>
+											<a href="#"><i class="fa fa-thumbs-up icon_1" style="font-size: 20px; transition: color 0.2s ease 0s, border-color 0.2s ease 0s, background-color 0.2s ease 0s; min-height: 0px; min-width: 0px; line-height: 20px; border-width: 0px 2px 0px 0px; margin: 0px; padding:0px 10px 0 0; letter-spacing: 0px;"></i>ĐĂNG BÀI</a>
 										</div>
 									</div>
 								</div>
@@ -216,8 +215,8 @@ $(document).ready(function(){
 		      <div class="but_list">
 		       <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 				<ul id="myTab" class="nav nav-tabs nav-tabs1" role="tablist">
-				  <li role="presentation" class="active"><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Doanh nghiệp</a></li>
-				  <li role="presentation"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Ý tưởng hay</a></li>
+				  <li role="presentation" ><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Doanh nghiệp</a></li>
+				  <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Ý tưởng hay</a></li>
 				  
 				</ul>
 			<div id="myTabContent" class="tab-content">

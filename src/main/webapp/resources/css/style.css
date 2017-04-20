@@ -9,7 +9,7 @@ h1, h2, h3 {margin-top: 0;}
 ul, ol {margin: 0;}
 p {margin: 0;}
 html, body{
-	font-family: 'PT Sans Narrow', sans-serif;
+	font-family: "Open Sans",sans-serif;
 	font-size: 100%;
     background:#fff; 
 }
@@ -108,7 +108,7 @@ body a{
     display: inline-block;
     border-bottom: none;
     font-weight:500;
-    background-color:#f1b458;
+    background-color:#fff;
     width: 100%;
     padding:0;
 }
@@ -246,7 +246,7 @@ ul.nav_1 li.last{
 }
 .banner-info a{
 	color:#FFF;
-	background:#f1b458;
+	background:#FF4500;
 	padding: .7em 1.5em;
 	text-decoration:none;
 }
@@ -3377,4 +3377,19 @@ h5.shortcode {
 .grid_3.grid_5 {
     margin: 2em 0 0 0;
 }
+}
+/* update by TucDang  */
+#home-tab{
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color:#f1b458;
+}
+#profile-tab{
+	padding-left: 40px;
+	padding-right: 40px;
+	background-color:#f1b458;	
+}
+#myTabContent{
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0 15px;
 }
