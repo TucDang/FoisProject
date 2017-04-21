@@ -98,13 +98,13 @@
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doanh Nghiệp<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Danh sách các danh nghiệp</a></li>
+                <li><a href="#">Danh sách các doanh nghiệp</a></li>
                 <li><a href="./businesslist.html">Doanh sách các ngành nghề</a></li>
                 
               </ul>
             </li>
             
-        
+        	<li><a href="joblist">Công việc nổi bật</a></li>
             <li class="last"><a href="contact">Liên hệ</a></li>
         </ul>
      </div><!-- /.navbar-collapse -->
