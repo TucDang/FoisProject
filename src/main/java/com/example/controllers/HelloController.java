@@ -13,7 +13,10 @@ public class HelloController {
    public String printHello() {
       return "homepage";
    }
-   
+   @RequestMapping(value = "/homepage", method = RequestMethod.GET)
+   public String homepage() {
+      return "homepage";
+   }
    @RequestMapping(value = "/login", method = RequestMethod.GET)
    public String login() {
       return "login";

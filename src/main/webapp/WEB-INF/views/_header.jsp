@@ -59,7 +59,7 @@
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
-            <li><a href="homepage.jsp">Trang chủ</a></li>
+            <li><a href="homepage">Trang chủ</a></li>
             
     		<li class="dropdown mega-dropdown active">
 			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ý tưởng khởi nghiệp<span class="caret"></span></a>				
@@ -99,7 +99,7 @@
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doanh Nghiệp<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
                 <li><a href="#">Danh sách các danh nghiệp</a></li>
-                <li><a href="#">Doanh sách các ngành nghề</a></li>
+                <li><a href="./businesslist.html">Doanh sách các ngành nghề</a></li>
                 
               </ul>
             </li>
