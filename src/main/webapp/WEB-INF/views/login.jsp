@@ -48,14 +48,14 @@ $(document).ready(function(){
 <!-- banner -->
   <div class="courses_banner">
   	<div class="container">
-  		<h3>Login</h3>
+  		<h3>ĐĂNG NHẬP</h3>
   		<p class="description">
-             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer lorem quam, adipiscing condimentum tristique vel, eleifend sed turpis. Pellentesque cursus arcu id magna euismod in elementum purus molestie.
+             NƠI CÁC DOANH NGHIỆP, Ý TƯỞNG, STARTUP HỘI TỤ 
         </p>
         <div class="breadcrumb1">
             <ul>
-                <li class="icon6"><a href="index.html">Home</a></li>
-                <li class="current-page">Login</li>
+                <li class="icon6"><a href="index.html">Trang chủ</a></li>
+                <li class="current-page">Đăng nhập</li>
             </ul>
         </div>
   	</div>
