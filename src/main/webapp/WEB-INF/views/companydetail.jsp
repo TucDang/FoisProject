@@ -327,7 +327,7 @@ $(document).ready(function(){
 				  </div>
 				  <div class="clearfix"> </div>						
 				  <div class="form-submit">
-				  	<input name="submit" type="submit" id="submit" class="submit_1 btn btn-primary btn-block" value="Thêm dsfdsfbình luận"> 
+				  	<input name="submit" type="submit" id="submit" class="submit_1 btn btn-primary btn-block" value="Thêm bình luận"> 
 				  </div>	  
            </form>
 		 </div>

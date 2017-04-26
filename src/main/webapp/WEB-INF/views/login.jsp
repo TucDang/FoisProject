@@ -64,18 +64,18 @@ $(document).ready(function(){
 	<div class="courses_box1">
 	   <div class="container">
 	   	  <form class="login">
-	    	<p class="lead">Welcome Back!</p>
+	    	<p class="lead">Đăng Nhập</p>
 		    <div class="form-group">
-			    <input autocomplete="off" type="text" name="log_username" class="required form-control" placeholder="Username">
+			    <input autocomplete="off" type="text" name="log_username" class="required form-control" placeholder="Tên đăng nhập">
 		    </div>
 		    <div class="form-group">
-			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Password" name="log_password">
+			    <input autocomplete="off" type="password" class="password required form-control" placeholder="Mật khẩu" name="log_password">
 		    </div>
 		    <div class="form-group">
-		    	<input type="checkbox" name="remember" value="true"> Remember Me
-		    	<input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Log In">
+		    	<input type="checkbox" name="remember" value="true"> Nhớ mật khẩu
+		    	<input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Đăng nhập">
 		    </div>
-	        <p>Don not have an account? <a href="register.html" title="Sign Up">Sign Up</a></p>
+	        <p>Bạn chưa có tài khoản? <a href="register.html" title="Sign Up">Đăng Kí</a></p>
 		 </form>
 	   </div>
 	</div>
