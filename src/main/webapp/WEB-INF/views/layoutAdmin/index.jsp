@@ -32,10 +32,10 @@
       <div class="templatemo-sidebar">
         <header class="templatemo-site-header">
           <div class="square"></div>
-          <h1>Visual Admin</h1>
+          <h1>TRANG QUẢN LÝ</h1>
         </header>
         <div class="profile-photo-container">
-          <img src="images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
+          <img src="resources/images/profile-photo.jpg" alt="Profile Photo" class="img-responsive">  
           <div class="profile-photo-overlay"></div>
         </div>      
         <!-- Search box -->
@@ -50,13 +50,12 @@
         </div>
         <nav class="templatemo-left-nav">          
           <ul>
-            <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Dashboard</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Charts</a></li>
-            <li><a href="data-visualization.html"><i class="fa fa-database fa-fw"></i>Data Visualization</a></li>
-            <li><a href="maps.html"><i class="fa fa-map-marker fa-fw"></i>Maps</a></li>
-            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>Manage Users</a></li>
-            <li><a href="preferences.html"><i class="fa fa-sliders fa-fw"></i>Preferences</a></li>
-            <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Sign Out</a></li>
+            <li><a href="#" class="active"><i class="fa fa-home fa-fw"></i>Trang nhà</a></li>
+            <li><a href="maps.html"><i class="fa fa-user fa-fw"></i>QL Doanh Nghiệp</a></li>
+            <li><a href="manage-users.html"><i class="fa fa-users fa-fw"></i>QL Startup</a></li>
+			<li><a href="data-visualization.html"><i class="fa fa-bar-chart fa-fw"></i>Thống kê</a></li>
+			<li><a href="login.html"><i class="fa fa-cog fa-fw"></i>QL người dùng</a></li>
+            <li><a href="login.html"><i class="fa fa-eject fa-fw"></i>Đăng xuất</a></li>
           </ul>  
         </nav>
       </div>
@@ -87,7 +86,7 @@
               <i class="fa fa-times"></i>
               <h2 class="text-uppercase">Maris</h2>
               <h3 class="text-uppercase margin-bottom-10">Design Project</h3>
-              <img src="images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
+              <img src="resources/images/bicycle.jpg" alt="Bicycle" class="img-circle img-thumbnail">
             </div>
             <div class="templatemo-content-widget white-bg col-1">
               <i class="fa fa-times"></i>
@@ -111,7 +110,7 @@
                 <div class="media">
                   <div class="media-left">
                     <a href="#">
-                      <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
+                      <img class="media-object img-circle" src="resources/images/sunset.jpg" alt="Sunset">
                     </a>
                   </div>
                   <div class="media-body">
@@ -125,7 +124,7 @@
                 <div class="media">
                   <div class="media-left">
                     <a href="#">
-                      <img class="media-object img-circle" src="images/sunset.jpg" alt="Sunset">
+                      <img class="media-object img-circle" src="resources/images/sunset.jpg" alt="Sunset">
                     </a>
                   </div>
                   <div class="media-body">
