@@ -16,6 +16,30 @@ public class AdminController {
 	   public String LoginAdmin() {
 	      return "layoutAdmin/login";
 	   }
-
+	
+	
+	@RequestMapping(value = "/manage-user", method = RequestMethod.GET)
+		public String ManageUser(){
+			return "layoutAdmin/manage-user";
+		}
+	
+	@RequestMapping(value = "/manage-business", method = RequestMethod.GET)
+		public String ManageBusiness(){
+			return "layoutAdmin/manage-business";
+		}
+	
+	@RequestMapping(value = "/manage-startup", method = RequestMethod.GET)
+		public String ManageStartup(){
+			return "layoutAdmin/manage-startup";
+		}
+	
+	@RequestMapping(value = "/statistical", method = RequestMethod.GET)
+		public String Statistical(){
+			return "layoutAdmin/statistical";
+		}
+	@RequestMapping(value = "/notification", method = RequestMethod.GET)
+	public String Notification(){
+		return "layoutAdmin/notification";
+	}
 
 }
