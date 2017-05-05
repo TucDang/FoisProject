@@ -21,6 +21,11 @@ public class HelloController {
    public String login() {
       return "login";
    }
+
+   @RequestMapping(value = "/postcompany", method = RequestMethod.GET)
+   public String postcompany() {
+   return "postcompany";
+   }
    
    @RequestMapping(value = "/register", method = RequestMethod.GET)
    public String register() {
@@ -40,6 +45,11 @@ public class HelloController {
    @RequestMapping(value = "/about", method = RequestMethod.GET)
    public String about() {
       return "about";
+   }
+   
+   @RequestMapping(value = "/poststartup", method = RequestMethod.GET)
+   public String poststartup() {
+      return "poststartup";
    }
    
    @RequestMapping(value = "/contact", method = RequestMethod.GET)
