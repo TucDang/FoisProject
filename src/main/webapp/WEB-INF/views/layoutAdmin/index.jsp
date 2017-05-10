@@ -201,18 +201,18 @@
                       <tr>
                         <td>ID</td>
                         <td>Họ Tên</td>
-                        <td>Tên Đăng Nhập</td>
-                        <td>Mật Khẩu</td>
+                        <td>Email</td>
+                        <td>Tên đăng nhập</td>
                         <td>Vai Trò</td>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>${id }</td>
+                        <td>${hoten }</td>
+                        <td>${email }</td>
+                        <td>${tendangnhap }</td>
+                        <td>${vaitro }</td>
                       </tr>
                       <tr>
                         <td></td>
