@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- private int idcongty;
+	private int idkhoinghiep;
+	private int idlinhvuc;
+	private Date ngayhen;
+	private String giohen; -->
+	
+<hibernate-mapping package="com.example.model">
+   <class name="chitietcuochen" table="chitietcuochen"> 
+        
+      <composite-id>
+      <key-property name="idcongty" column="idcongty"/>
+      <key-property name="idkhoinghiep" column="idkhoinghiep"/>
+       <key-property name="idlinhvuc" column="idlinhvuc"/>
+      </composite-id>
+      
+     <property name="ngayhen" column="ngayhen" type="java.util.Date"/>
+      <property name="giohen" column="giohen" type="java.lang.String"/>
+   </class>
+</hibernate-mapping>
+	

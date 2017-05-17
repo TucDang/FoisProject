@@ -10,6 +10,14 @@
             <property name="show_sql">true</property>
             <property name="current_session_context_class">thread</property>
             <property name="connection.pool_size">100</property>
+            
             <mapping resource="taikhoanquantri.hbm.xml"/>
+            <mapping resource="chitietcuochen.hbm.xml"/>
+            <mapping resource="thongtinduan.hbm.xml"/>
+            <mapping resource="linhvuc.hbm.xml"/>
+            <mapping resource="khoinghiep.hbm.xml"/>
+
+            <mapping resource="congty.hbm.xml"/>
+            <mapping resource="congviec.hbm.xml"/>
       </session-factory>
 </hibernate-configuration>

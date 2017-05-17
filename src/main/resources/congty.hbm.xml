@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- private int idcongty;
+	private String tencongty;
+	private String diachi;
+	private String sodienthoai;
+	private int Fax;
+	private String Email;
+	private Date ngaythanhlap;
+	private String tendangnhap;
+	private String matkhau;
+	private String mota;
+	private byte[] logo;
+	private int idlinhvuc;
+	 -->
+	 
+	 <hibernate-mapping package="com.example.model">
+   <class name="congty" table="congty">      
+      <id name="idcongty" type="int" column="idcongty">
+         <generator class="native"/>
+      </id>
+      <property name="tencongty" column="tencongty" type="java.lang.String"/>
+      <property name="diachi" column="diachi" type="java.lang.String"/>
+      <property name="sodienthoai" column="sodienthoai" type="int"/>
+      <property name="Fax" column="Fax" type="java.lang.String"/>
+      <property name="Email" column="Email" type="java.lang.String"/>
+      <property name="ngaythanhlap" column="ngaythanhlap" type="java.util.Date"/>
+      <property name="tendangnhap" column="tendangnhap" type="java.lang.String"/>
+      <property name="matkhau" column="matkahu" type="java.lang.String"/>
+      <property name="mota" column="mota" type="java.lang.String"/>
+      <property name="logo" column="logo" type="byte[]"/>
+      <property name="idlinhvuc" column="idlinhvuc" type="int"/>
+   </class>
+</hibernate-mapping>

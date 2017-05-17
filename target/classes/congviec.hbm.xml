@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- private int idcongviec;
+	private String tencongviec;
+	private Date ngaylamviec;
+	private String mota;
+	private int luong;
+	private int tinhtrang;
+	private int idcongty;
+	private int idlinhvuc; -->
+	<hibernate-mapping>
+   <class name="com.example.model.congviec" table="congviec">      
+      <id name="idcongviec" type="int" column="idcongviec">
+         <generator class="native"/>
+      </id>
+      <property name="tencongviec" column="tencongviec" type="java.lang.String"/>
+      <property name="ngaylamviec" column="ngaylamviec" type="java.util.Date"/>
+      <property name="mota" column="mota" type="int"/>
+      <property name="luong" column="luong" type="int"/>
+      <property name="tinhtrang" column="tinhtrang" type="int"/>
+      <property name="idcongty" column="idcongty" type="int"/>
+      <property name="idlinhvuc" column="idlinhvuc" type="int"/>
+   </class>
+</hibernate-mapping>

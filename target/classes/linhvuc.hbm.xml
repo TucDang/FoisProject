@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+ 
+
+	
+<hibernate-mapping>
+   <class name="com.example.model.linhvuc" table="linhvuc">      
+      <id name="idlinhvuc" type="int" column="idlinhvuc">
+         <generator class="native"/>
+      </id>
+      <property name="linhvuc" column="linhvuc" type="java.lang.String"/>
+   </class>
+</hibernate-mapping>
