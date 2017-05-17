@@ -8,6 +8,7 @@ public class taikhoanquantri {
 	private String tendangnhap;
 	private String matkhau;
 	private int vaitro;
+	
 	public taikhoanquantri() {
 		
 	}

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+ "-//Hibernate/Hibernate Mapping DTD//EN"
+ "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
+	
+<hibernate-mapping>
+   <class name="com.example.model.khoinghiep" table="khoinghiep">      
+      <id name="idkhoinghiep" type="int" column="idkhoinghiep">
+         <generator class="native"/>
+      </id>
+      <property name="tenduan" column="tenduan" type="java.lang.String"/>
+      <property name="sodienthoai" column="sodienthoai" type="java.lang.String"/>
+      <property name="email" column="email" type="java.lang.String"/>
+      <property name="mota" column="mota" type="java.lang.String"/>
+      <property name="ngaykhoinghiep" column="ngaykhoinghiep" type="java.util.Date"/>
+      <property name="tendangnhap" column="tendangnhap" type="java.lang.String"/>
+      <property name="matkhau" column="matkhau" type="java.lang.String"/>
+      <property name="logo" column="logo" type="byte[]"/>
+      <property name="idlinhvuc" column="idlinhvuc" type="int"/>
+   </class>
+</hibernate-mapping>
