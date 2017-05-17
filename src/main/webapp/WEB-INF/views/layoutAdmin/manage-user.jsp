@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
     <title>Visual Admin Dashboard - Home</title>
@@ -40,99 +40,33 @@
               <table class="table table-striped table-bordered templatemo-user-table">
                 <thead>
                   <tr>
-                    <td><a href="" class="white-text templatemo-sort-by"># <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Họ Tên <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Tên Đăng Nhập <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by"> <span class="caret"></span></a></td>
-                    <td><a href="" class="white-text templatemo-sort-by">Email <span class="caret"></span></a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Mã</a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Họ Tên</a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Tên Đăng Nhập</a></td>
+                    <td><a href="" class="white-text templatemo-sort-by">Mật Khẩu</td>
+                    <td><a href="" class="white-text templatemo-sort-by">Email</a></td>
                     <td>Chỉnh Sửa</td>
                     <td>Hoạt Động</td>
                     <td>Xóa</td>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>
-                  
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr> 
-                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>
-                <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>
-                   <tr>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                    <td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                  </tr>               
+				<tbody>
+			    	<c:forEach items="${listuser}" var="taikhoan"> 
+                     <tr> 
+              			<td>${taikhoan.getIdtaikhoanquantri()}</td>
+                    	<td>${taikhoan.getHoten()}</td>
+                    	<td>${taikhoan.getTendangnhap()}</td>
+                    	<td>${taikhoan.getMatkhau()}</td>
+                    	<td>${taikhoan.getEmail()}</td>
+                    	<td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
+                   		<td><a href="" class="templatemo-link">Hoạt Động</a></td>
+                    	<td><a href="<c:url value='/remove' />" class="templatemo-link delete">Xóa</a></td> 
+                     </tr>
+           			</c:forEach>
                 </tbody>
+
+             
+                
               </table>    
             </div>                          
           </div>          

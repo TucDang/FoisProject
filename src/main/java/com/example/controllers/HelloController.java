@@ -71,4 +71,9 @@ public class HelloController {
    public String businesslist() {
       return "businesslist";
    }
+   
+   @RequestMapping(value = "/joblist", method = RequestMethod.GET)
+   public String joblist() {
+      return "joblist";
+   }
 }

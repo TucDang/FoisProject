@@ -24,7 +24,7 @@
             <li><a href="index" class="active"><i class="fa fa-home fa-fw"></i>TRang Chủ</a></li>
             <li><a href="manage-business"><i class="fa fa-user fa-fw"></i>Quản Lý Doanh Nghiệp</a></li>
             <li><a href="manage-startup"><i class="fa fa-users fa-fw"></i>Quản Lý Ý Tưởng</a></li>
-			<li><a href="manage-user"><i class="fa fa-bar-chart fa-fw"></i>Quản Lý Người Dùng</a></li>
+			<li><a href="manage-user"><i class="fa fa-bar-chart fa-fw"></i>Quản Lý Tài Khoản</a></li>
 			<li><a href="statistical"><i class="fa fa-cog fa-fw"></i>Thống Kê</a></li>
             <li><a href="admin"><i class="fa fa-eject fa-fw"></i>Đăng Xuất</a></li>
           </ul>  

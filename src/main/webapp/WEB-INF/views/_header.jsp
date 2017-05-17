@@ -11,7 +11,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="homepage.jsp">UIT-Team</a>
+	        <a class="navbar-brand" href="homepage">UIT-Team</a>
 	    </div>
 	    <!--/.navbar-header-->
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
@@ -62,7 +62,7 @@
             <li><a href="homepage">Trang chủ</a></li>
             
     		<li class="dropdown mega-dropdown active">
-			    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ý tưởng khởi nghiệp<span class="caret"></span></a>				
+			    <a href="startuplist" class="dropdown-toggle" data-toggle="dropdown">Ý Tưởng Khởi Nghiệp<span class="caret"></span></a>				
 				<div class="dropdown-menu mega-dropdown-menu">
                     <div class="container-fluid">
     				    <!-- Tab panes -->
@@ -96,10 +96,10 @@
 			</li>
 			
             <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Doanh Nghiệp<span class="caret"></span></a>
+              <a href="companylist" class="dropdown-toggle" data-toggle="dropdown">Doanh Nghiệp<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">Danh sách các doanh nghiệp</a></li>
-                <li><a href="./businesslist.html">Doanh sách các ngành nghề</a></li>
+                <li><a href="companylist">Danh Sách Các Doanh Nghiệp</a></li>
+                <li><a href="businesslist">Doanh sách các ngành nghề</a></li>
                 
               </ul>
             </li>
