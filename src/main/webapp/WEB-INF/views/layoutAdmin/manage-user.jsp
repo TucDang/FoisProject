@@ -34,9 +34,11 @@
       <div class="templatemo-content col-1 light-gray-bg">
         <%@include file="_RightColumn.jsp" %>
         <div class="templatemo-content-container">
-
+	
           <div class="templatemo-content-widget no-padding">
+          	
             <div class="panel panel-default table-responsive">
+            <div class="templatemo-flex-row flex-content-row">
               <table class="table table-striped table-bordered templatemo-user-table">
                 <thead>
                   <tr>
@@ -47,7 +49,6 @@
                     <td><a href="" class="white-text templatemo-sort-by">Email</a></td>
                     <td>Chỉnh Sửa</td>
                     <td>Hoạt Động</td>
-                    <td>Xóa</td>
                   </tr>
                 </thead>
 				<tbody>
@@ -58,16 +59,27 @@
                     	<td>${taikhoan.getTendangnhap()}</td>
                     	<td>${taikhoan.getMatkhau()}</td>
                     	<td>${taikhoan.getEmail()}</td>
-                    	<td><a href="" class="templatemo-edit-btn">Chỉnh Sửa</a></td>
-                   		<td><a href="" class="templatemo-link">Hoạt Động</a></td>
-                    	<td><a href="<c:url value='/remove' />" class="templatemo-link delete">Xóa</a></td> 
+                    	<td><a href="" class="templatemo-link update">Sửa</a></td>
+                    	<td><a href="<c:url value='/remove/${taikhoan.getIdtaikhoanquantri()}'/>" class="templatemo-link delete">Xóa</a></td> 
                      </tr>
            			</c:forEach>
                 </tbody>
-
+				<tfoot>
+                    	<tr>
+                    		<td><a href="" class="white-text templatemo-sort-by"></a></td>
+                    		<td><input id="" class="templatemo-edit-btn not-hover" type="text" name="" placeholder="Họ Tên"size="15px"></td>
+                    		<td><input id="" class="templatemo-edit-btn not-hover" type="text" name="" placeholder="Tên đăng nhập" size="15px"></td>
+                    		<td><input id="" class="templatemo-edit-btn not-hover" type="text" name="" placeholder="Mật khẩu" size="15px"></td>
+                    		<td><input id="" class="templatemo-edit-btn not-hover" type="text" name="" placeholder="Email" size="15px"></td>
+                    		<td><a href="" class="white-text templatemo-sort-by"></a></td>
+                    		<td><button id="" class="templatemo-edit-btn templatemo-link">Thêm</button></td>
+                    		
+                    	</tr>
+                    </tfoot>
              
                 
-              </table>    
+              </table>  
+                </div>   
             </div>                          
           </div>          
           <div class="templatemo-flex-row flex-content-row">

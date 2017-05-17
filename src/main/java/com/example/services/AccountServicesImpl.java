@@ -11,33 +11,34 @@ import com.example.model.taikhoanquantri;
 @Service("AccountServices")
 public class AccountServicesImpl implements AccountServices {
 	
-	private AccountDaoImpl accountDao;
+	private AccountDaoImpl accountDao = new AccountDaoImpl();
 	
 	
 	
 	@Override
 	public void addAccount(taikhoanquantri tk) {
 		// TODO Auto-generated method stub
+		this.accountDao.addAccount(tk);
 		
 	}
 
 	@Override
 	public List<taikhoanquantri> listAccount() {
 		// TODO Auto-generated method stub
-		return null;
+		return this.accountDao.listAccount();
 	}
 
 	@Override
 	public taikhoanquantri getAccount(int id) {
 		// TODO Auto-generated method stub
 		
-		return accountDao.getAccount(id);
+		return this.accountDao.getAccount(id);
 	}
 
 	@Override
 	public void deleteAccount(int id) {
 		// TODO Auto-generated method stub
-		accountDao.deleteAccount(id);
+		this.accountDao.deleteAccount(id);
 	}
 
 }

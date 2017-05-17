@@ -20,4 +20,5 @@ public interface AccountDao{
 	 public taikhoanquantri getAccount(int id);
 	 
 	 public void deleteAccount(int id);
+	 
 }

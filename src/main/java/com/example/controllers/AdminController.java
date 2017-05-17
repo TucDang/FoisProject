@@ -12,6 +12,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.servlet.ModelAndView;
 
 import com.example.model.taikhoanquantri;
 import com.example.services.AccountServices;
@@ -22,14 +23,9 @@ import com.example.util.HibernateUtil;
 
 public class AdminController {
 	
-	private AccountServicesImpl accountService = new AccountServicesImpl();
+	private AccountServicesImpl accountService =new AccountServicesImpl();
 	
-	
-	
-	
-	
-    
-	
+
 	
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
 	   public String Admin(Model m) {
@@ -49,34 +45,18 @@ public class AdminController {
 	
 	@RequestMapping(value = "/manage-user", method = RequestMethod.GET)
 		public String ManageUser(Model m){
-		
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-		Transaction tran = session.beginTransaction();
-		List<taikhoanquantri> r = session.createQuery("from taikhoanquantri").list();
-		
-		tran.commit();
-		m.addAttribute("listuser", r);
-		
-		
-			
-	       
-	        
+		m.addAttribute("listuser",accountService.listAccount() );    
 			return "layoutAdmin/manage-user";
 		}
 		
-	@RequestMapping(value = "/remove", method = RequestMethod.GET)
-		public String removeAccount(){
+	@RequestMapping(value = "/remove/{id}", method = RequestMethod.GET)
+		public String removeAccount(@PathVariable("id") int id){
 		
-		 accountService.deleteAccount(2);
+		accountService.deleteAccount(id);
 		 
-		 return "redirect:manage-user";
+		 return "redirect:/manage-user";
 	}
 		
-	
-
-
-
-
 	@RequestMapping(value = "/manage-business", method = RequestMethod.GET)
 		public String ManageBusiness(){
 			return "layoutAdmin/manage-business";

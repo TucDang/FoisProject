@@ -18,13 +18,20 @@ public class AccountDaoImpl implements AccountDao{
 		 
 		 public void addAccount(taikhoanquantri tk) {
 		   sessionFactory.getCurrentSession().saveOrUpdate(tk);
+		   
 		 
 		 }
 
 		@Override
 		public List<taikhoanquantri> listAccount() {
 			// TODO Auto-generated method stub
-			return null;
+			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			Transaction tran = session.beginTransaction();
+			List<taikhoanquantri> r = session.createQuery("from taikhoanquantri").list();
+			tran.commit();
+			
+			
+			return r;
 		}
 
 		@Override
@@ -34,7 +41,7 @@ public class AccountDaoImpl implements AccountDao{
 			Transaction tran = session.beginTransaction();
 			taikhoanquantri tk = (taikhoanquantri) session.get(taikhoanquantri.class, id);
 			tran.commit();
-			return null;
+			return tk;
 		}
 
 		@Override
@@ -50,7 +57,9 @@ public class AccountDaoImpl implements AccountDao{
 				session.delete(tk);
 			}
 			tran.commit();
+		
 		}
 
+	
 		
 }
