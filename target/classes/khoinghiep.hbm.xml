@@ -8,6 +8,7 @@
       <id name="idkhoinghiep" type="int" column="idkhoinghiep">
          <generator class="native"/>
       </id>
+      <property name="tenkhoinghiep" column="tenkhoinghiep" type="java.lang.String"/>
       <property name="tenduan" column="tenduan" type="java.lang.String"/>
       <property name="sodienthoai" column="sodienthoai" type="java.lang.String"/>
       <property name="email" column="email" type="java.lang.String"/>

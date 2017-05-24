@@ -4,6 +4,7 @@ import java.util.Date;
 
 public class khoinghiep {
 	private int idkhoinghiep;
+	private String tenkhoinghiep;
 	private String tenduan;
 	private String sodienthoai;
 	private String email;
@@ -21,6 +22,12 @@ public class khoinghiep {
 	}
 	public void setIdkhoinghiep(int idkhoinghiep) {
 		this.idkhoinghiep = idkhoinghiep;
+	}
+	public String getTenkhoinghiep() {
+		return tenkhoinghiep;
+	}
+	public void setTenkhoinghiep(String tenkhoinghiep) {
+		this.tenkhoinghiep = tenkhoinghiep;
 	}
 	public String getTenduan() {
 		return tenduan;

@@ -549,6 +549,10 @@ input[type="radio"]:checked + label span {
 	color: white;
 }
 
+
+.badge-primary {
+    background-color: #03a9f4;
+}
 /* 7. Preferences
 -------------------------------*/
 .has-success .checkbox, .has-success .checkbox-inline, .has-success .control-label, .has-success .help-block, 
