@@ -26,6 +26,11 @@
     <![endif]-->
 
   </head>
+  
+  <c:if test="${sessionScope.tk != 1}">
+    <c:redirect url = "/admin" />
+	</c:if>
+  
   <body>  
     <!-- Left column -->
     <div class="templatemo-flex-row">

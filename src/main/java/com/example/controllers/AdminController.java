@@ -2,6 +2,8 @@ package com.example.controllers;
 
 import java.util.List;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -27,13 +29,22 @@ public class AdminController {
 	private AccountServicesImpl accountService =new AccountServicesImpl();
 
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	   public ModelAndView LoginAdmin() {
+	   public ModelAndView LoginAdmin( HttpServletRequest request) {
+		HttpSession ss = request.getSession();
+		ss.removeAttribute("tk");
 	      return new ModelAndView("layoutAdmin/login","command",new taikhoanquantri());
 	   }
 	
+	@RequestMapping(value = "/index", method = RequestMethod.GET)
+	   public ModelAndView index() {
+	      return new ModelAndView("layoutAdmin/index");
+	   }
+	
 	@RequestMapping(value = "/admin", method = RequestMethod.POST)
-	   public ModelAndView Admin(Model m, @ModelAttribute("s") taikhoanquantri tkview) {
+	   public ModelAndView Admin(Model m, @ModelAttribute("s") taikhoanquantri tkview, HttpServletRequest request) {
 		int testtk = accountService.testAccount(tkview, accountService.listAccount());	
+		HttpSession ss = request.getSession();
+		ss.setAttribute("tk", testtk);
 		if(testtk == 1)
 		{
 			return new ModelAndView("layoutAdmin/index");

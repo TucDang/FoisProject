@@ -47,7 +47,7 @@
 	        	</div>	          	
 	          	<div class="form-group">
 				    <div class="checkbox squaredTwo">
-						<label for="c1"><span></span>${erro}</label>
+						<label for="c1"><p style="color:red">${erro}</p></label>
 				    </div>				    
 				</div>
 				<div class="form-group">
