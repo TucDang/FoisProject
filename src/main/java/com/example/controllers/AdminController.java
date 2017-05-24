@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -24,24 +25,24 @@ import com.example.util.HibernateUtil;
 public class AdminController {
 	
 	private AccountServicesImpl accountService =new AccountServicesImpl();
-	
 
-	
-	@RequestMapping(value = "/index", method = RequestMethod.GET)
-	   public String Admin(Model m) {
-		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
-		Transaction tran = session.beginTransaction();
-		List<taikhoanquantri> r = session.createQuery("from taikhoanquantri").list();
-		tran.commit();
-		m.addAttribute("id",r.get(0).getIdtaikhoanquantri());
-	    return "layoutAdmin/index";
-	   }
-	
 	@RequestMapping(value = "/admin", method = RequestMethod.GET)
-	   public String LoginAdmin() {
-	      return "layoutAdmin/login";
+	   public ModelAndView LoginAdmin() {
+	      return new ModelAndView("layoutAdmin/login","command",new taikhoanquantri());
 	   }
 	
+	@RequestMapping(value = "/admin", method = RequestMethod.POST)
+	   public ModelAndView Admin(Model m, @ModelAttribute("s") taikhoanquantri tkview) {
+		int testtk = accountService.testAccount(tkview, accountService.listAccount());	
+		if(testtk == 1)
+		{
+			return new ModelAndView("layoutAdmin/index");
+		}
+		else{
+			m.addAttribute("erro", "Bạn đã nhập sai tên đăng nhập hoặc mật khẩu");
+			return new ModelAndView("layoutAdmin/login","command", new taikhoanquantri());
+		}
+	   }
 	
 	@RequestMapping(value = "/manage-user", method = RequestMethod.GET)
 		public String ManageUser(Model m){
@@ -54,7 +55,7 @@ public class AdminController {
 		
 		accountService.deleteAccount(id);
 		 
-		 return "redirect:/manage-user";
+		return "redirect:/manage-user";
 	}
 		
 	@RequestMapping(value = "/manage-business", method = RequestMethod.GET)

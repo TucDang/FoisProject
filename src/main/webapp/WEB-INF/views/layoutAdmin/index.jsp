@@ -84,13 +84,10 @@
                 </div>                          
               </div>
             </div>                                 
-           
-           
           </div>
+          
           <div class="templatemo-flex-row flex-content-row">
-            <div class="col-1">              
-                     
-                 
+            <div class="col-1">                  
             </div>
             <div class="col-1">
               <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
@@ -121,31 +118,8 @@
                 </div>                          
               </div>
             </div>           
-          </div> <!-- Second row ends -->
-          <div class="templatemo-flex-row flex-content-row templatemo-overflow-hidden"> <!-- overflow hidden for iPad mini landscape view-->
-            <div class="col-1 templatemo-overflow-hidden">
-              <div class="templatemo-content-widget white-bg templatemo-overflow-hidden">
-                <i class="fa fa-times"></i>
-                <div class="templatemo-flex-row flex-content-row">
-                  <div class="col-1 col-lg-6 col-md-12">
-                    <h2 class="text-center">Modular<span class="badge">new</span></h2>
-                    <div id="pie_chart_div" class="templatemo-chart"></div> <!-- Pie chart div -->
-                  </div>
-                  <div class="col-1 col-lg-6 col-md-12">
-                    <h2 class="text-center">Interactive<span class="badge">new</span></h2>
-                    <div id="bar_chart_div" class="templatemo-chart"></div> <!-- Bar chart div -->
-                  </div>  
-                </div>                
-              </div>
-            </div>
-          </div>
-          <footer class="text-right">
-            <p>Copyright &copy; 2017 uit-team
-            | Designed by <a href="http://www.templatemo.com" target="_parent">templatemo</a></p>
-          </footer>         
-        </div>
-      </div>
-    </div>
+          </div> 
+          
     
     <!-- JS -->
     <script src="resources/js/jquery-1.11.2.min.js"></script>      <!-- jQuery -->

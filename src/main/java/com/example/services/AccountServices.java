@@ -20,4 +20,6 @@ public interface AccountServices {
 	 public taikhoanquantri getAccount(int id);
 	 
 	 public void deleteAccount(int id);
+	 
+	 public int testAccount(taikhoanquantri tkview, List<taikhoanquantri> l);
 }

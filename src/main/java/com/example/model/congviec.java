@@ -5,12 +5,13 @@ import java.util.Date;
 public class congviec {
 	private int idcongviec;
 	private String tencongviec;
-	private Date ngaylamviec;
+	private Date ngaydangviec;
 	private String mota;
 	private int luong;
 	private int tinhtrang;
 	private int idcongty;
 	private int idlinhvuc;
+	
 	public congviec(){}
 	
 	public int getIdcongviec() {
@@ -25,11 +26,11 @@ public class congviec {
 	public void setTencongviec(String tencongviec) {
 		this.tencongviec = tencongviec;
 	}
-	public Date getNgaylamviec() {
-		return ngaylamviec;
+	public Date getNgaydangviec() {
+		return ngaydangviec;
 	}
-	public void setNgaylamviec(Date ngaylamviec) {
-		this.ngaylamviec = ngaylamviec;
+	public void setNgaydangviec(Date ngaylamviec) {
+		this.ngaydangviec = ngaylamviec;
 	}
 	public String getMota() {
 		return mota;

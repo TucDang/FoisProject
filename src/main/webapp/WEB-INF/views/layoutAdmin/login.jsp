@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html lang="en">
 	<head>
@@ -30,32 +31,30 @@
 			<header class="text-center">
 	          <h1>FOIS-VIETNAM</h1>
 	        </header>
-	        <form action="index" class="templatemo-login-form">
+	        
+	        <form:form action="admin" class="templatemo-login-form" method="POST">
 	        	<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-user fa-fw"></i></div>	        		
-		              	<input type="text" class="form-control" placeholder="admin@gmail.com">           
-		          	</div>	
+		              	<form:input path="email" class="form-control" />
 	        	</div>
+	        	<div style="height:30px"></div>
 	        	<div class="form-group">
 	        		<div class="input-group">
 		        		<div class="input-group-addon"><i class="fa fa-key fa-fw"></i></div>	        		
-		              	<input type="password" class="form-control" placeholder="******">           
+		              	<form:password path="matkhau" class="form-control"/>             
 		          	</div>	
 	        	</div>	          	
 	          	<div class="form-group">
 				    <div class="checkbox squaredTwo">
-				        <input type="checkbox" id="c1" name="cc" />
-						<label for="c1"><span></span>Remember me</label>
+						<label for="c1"><span></span>${erro}</label>
 				    </div>				    
 				</div>
 				<div class="form-group">
 					<button type="submit" class="templatemo-blue-button width-100">Login</button>
 				</div>
-	        </form>
+	        </form:form>
 		</div>
-		<div class="templatemo-content-widget templatemo-login-widget templatemo-register-widget white-bg">
-			<p>Not a registered user yet? <strong><a href="#" class="blue-text">Sign up now!</a></strong></p>
-		</div>
+		
 	</body>
 </html>

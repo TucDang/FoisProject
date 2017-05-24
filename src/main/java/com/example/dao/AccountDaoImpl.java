@@ -27,11 +27,9 @@ public class AccountDaoImpl implements AccountDao{
 			// TODO Auto-generated method stub
 			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
 			Transaction tran = session.beginTransaction();
-			List<taikhoanquantri> r = session.createQuery("from taikhoanquantri").list();
+			List<taikhoanquantri> l = session.createQuery("from taikhoanquantri").list();
 			tran.commit();
-			
-			
-			return r;
+			return l;
 		}
 
 		@Override

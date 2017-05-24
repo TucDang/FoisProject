@@ -41,4 +41,16 @@ public class AccountServicesImpl implements AccountServices {
 		this.accountDao.deleteAccount(id);
 	}
 
+	@Override
+	public int testAccount(taikhoanquantri tkview, List<taikhoanquantri> l) {
+		// TODO Auto-generated method stub
+		for(taikhoanquantri tk : l){
+			if(tkview.getEmail().equals(tk.getEmail()) && 
+					tkview.getMatkhau().equals(tk.getMatkhau()) &&
+					tk.getVaitro() == 1)
+				return 1;
+		}
+		return 0;
+	}
+
 }

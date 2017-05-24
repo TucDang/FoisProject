@@ -13,8 +13,8 @@
          <generator class="native"/>
       </id>
       <property name="tencongviec" column="tencongviec" type="java.lang.String"/>
-      <property name="ngaylamviec" column="ngaylamviec" type="java.util.Date"/>
-      <property name="mota" column="mota" type="int"/>
+      <property name="ngaydangviec" column="ngaydangviec" type="java.util.Date"/>
+      <property name="mota" column="mota" type="java.lang.String"/>
       <property name="luong" column="luong" type="int"/>
       <property name="tinhtrang" column="tinhtrang" type="int"/>
       <property name="idcongty" column="idcongty" type="int"/>

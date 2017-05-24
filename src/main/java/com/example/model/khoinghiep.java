@@ -5,7 +5,6 @@ import java.util.Date;
 public class khoinghiep {
 	private int idkhoinghiep;
 	private String tenkhoinghiep;
-	private String tenduan;
 	private String sodienthoai;
 	private String email;
 	private String mota;
@@ -14,6 +13,8 @@ public class khoinghiep {
 	private String matkhau;
 	private byte[] logo;
 	private int idlinhvuc;
+	//<many-to-one name="taikhoan" column="idtaikhoan" 
+		//       class="com.danhlamthangcanh.model.taikhoan"  not-null="true"/>
 	
 	public khoinghiep(){}
 	
@@ -29,12 +30,7 @@ public class khoinghiep {
 	public void setTenkhoinghiep(String tenkhoinghiep) {
 		this.tenkhoinghiep = tenkhoinghiep;
 	}
-	public String getTenduan() {
-		return tenduan;
-	}
-	public void setTenduan(String tenduan) {
-		this.tenduan = tenduan;
-	}
+	
 	public String getSodienthoai() {
 		return sodienthoai;
 	}
