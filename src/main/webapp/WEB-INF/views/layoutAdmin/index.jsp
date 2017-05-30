@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title>Visual Admin Dashboard - Home</title>
+    <title>Trang Chủ Quản Lý</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -56,60 +56,20 @@
                         <td>Chỉnh Sửa</td>
                         <td>Duyệt Bài</td>
                     	<td>Xóa Bài</td>
-                        
                       </tr>
                     </thead>
                     <tbody>
+                    <c:forEach items="${listjob}" var="postJob"> 
                       <tr>
-                   
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>${postJob.getTencongviec()}</td>
+                        <td>${postJob.getIdcongty()}</td>
+                        <td>${postJob.getIdlinhvuc()}</td>
+                        <td>${postJob.getNgaydangviec()}</td>
                         <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
                     	<td><a href="" class="templatemo-link">Duyệt</a></td>
                    		<td><a href="" class="templatemo-link delete">Xóa</a></td>
                       </tr>
-                      <tr>
-                     
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   		<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                    
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   		<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                    
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   		<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                  
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   		<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>                    
+                      </c:forEach>       
                     </tbody>
                   </table>    
                 </div>                          

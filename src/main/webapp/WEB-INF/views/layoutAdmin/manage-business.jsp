@@ -7,7 +7,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">  
-    <title>Visual Admin Dashboard - Home</title>
+    <title>Trang Quản Lý Doanh Nghiệp</title>
     <meta name="description" content="">
     <meta name="author" content="templatemo">
     <!-- 
@@ -43,7 +43,6 @@
         <div class="templatemo-flex-row flex-content-row">
              <div class="col-1">
               <div class="panel panel-default templatemo-content-widget white-bg no-padding templatemo-overflow-hidden">
-                
                 <div class="panel-heading templatemo-position-relative" style="background-color:#f17a54 !important"><h2 class="text-uppercase">Quản Lý Doanh Nghiệp</h2></div>
                 <div class="table-responsive">
                   <table class="table table-striped table-bordered">
@@ -61,61 +60,7 @@
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>                    
+                               
                     </tbody>
                   </table>    
                 </div>                          
