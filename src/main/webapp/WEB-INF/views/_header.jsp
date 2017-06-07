@@ -22,13 +22,8 @@
 		        
 		        
 		        <li class="dropdown">
-		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-search"></i><span>Tìm kiếm</span></a>
-		            <ul class="dropdown-menu search-form">
-			           <form>        
-                            <input type="text" class="search-text" name="s" placeholder="Search...">    
-                            <button type="submit" class="search-submit"><i class="fa fa-search"></i></button>
-                       </form>
-			        </ul>
+		            <a href="#"><i class="fa fa-user"></i><span>Đăng kí</span></a>
+		            
 		        </li>
 		        <li class="dropdown">
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Việt Nam</span></a>
