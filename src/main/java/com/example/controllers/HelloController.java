@@ -17,7 +17,11 @@ public class HelloController {
 	private AdminStartupServicesImpl AdminStartupService = new AdminStartupServicesImpl();
 	 
    @RequestMapping(value = "/", method = RequestMethod.GET)
-   public String printHello() {
+   public String printHello(Model m) {
+	   m.addAttribute("listjob",AdminBusinessService.listJob());
+	   m.addAttribute("listbusiness",AdminBusinessService.listBusiness());
+	   m.addAttribute("listproject",AdminStartupService.listProject());
+	   m.addAttribute("liststartup",AdminStartupService.listStartup());
       return "homepage";
    }
    @RequestMapping(value = "/homepage", method = RequestMethod.GET)
