@@ -2,19 +2,30 @@ package com.example.controllers;
 
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import com.example.services.AdminBusinessServicesImpl;
+import com.example.services.AdminStartupServicesImpl;
 
 
 @Controller
 public class HelloController {
+	
+	private AdminBusinessServicesImpl AdminBusinessService = new AdminBusinessServicesImpl();
+	private AdminStartupServicesImpl AdminStartupService = new AdminStartupServicesImpl();
 	 
    @RequestMapping(value = "/", method = RequestMethod.GET)
    public String printHello() {
       return "homepage";
    }
    @RequestMapping(value = "/homepage", method = RequestMethod.GET)
-   public String homepage() {
+   public String homepage(Model m) {
+	   m.addAttribute("listjob",AdminBusinessService.listJob());
+	   m.addAttribute("listbusiness",AdminBusinessService.listBusiness());
+	   m.addAttribute("listproject",AdminStartupService.listProject());
+	   m.addAttribute("liststartup",AdminStartupService.listStartup());
       return "homepage";
    }
    @RequestMapping(value = "/login", method = RequestMethod.GET)

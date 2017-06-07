@@ -6,6 +6,7 @@ import org.springframework.stereotype.Service;
 
 
 import com.example.dao.AdminBusinessDaoImpl;
+import com.example.model.congty;
 import com.example.model.congviec;
 
 @Service("AdminBusinessServices")
@@ -13,6 +14,8 @@ import com.example.model.congviec;
 public class AdminBusinessServicesImpl implements AdminBusinessServices{
 	
 	private AdminBusinessDaoImpl AdminBusinessDao = new AdminBusinessDaoImpl();
+	
+	
 
 	@Override
 	public void addJob(congviec cv) {
@@ -36,6 +39,31 @@ public class AdminBusinessServicesImpl implements AdminBusinessServices{
 	public void deleteJob(int id) {
 		// TODO Auto-generated method stub
 		this.AdminBusinessDao.deleteJob(id);
+	}
+
+	@Override
+	public void addBusiness(congty ct) {
+		// TODO Auto-generated method stub
+		this.AdminBusinessDao.addBusiness(ct);
+		
+	}
+
+	@Override
+	public List<congty> listBusiness() {
+		// TODO Auto-generated method stub
+		return this.AdminBusinessDao.listBusiness();
+	}
+
+	@Override
+	public congty getBusiness(int id) {
+		// TODO Auto-generated method stub
+		return this.AdminBusinessDao.getBusiness(id);
+	}
+
+	@Override
+	public void deleteBusiness(int id) {
+		// TODO Auto-generated method stub
+		this.AdminBusinessDao.deleteBusiness(id);
 	}
 
 }

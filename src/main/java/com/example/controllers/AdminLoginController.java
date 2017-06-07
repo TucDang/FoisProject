@@ -12,12 +12,17 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.example.model.taikhoanquantri;
 import com.example.services.AccountServicesImpl;
+import com.example.services.AdminBusinessServicesImpl;
+import com.example.services.AdminStartupServicesImpl;
 
 @Controller
 
 public class AdminLoginController {
 	
 	private AccountServicesImpl accountService = new AccountServicesImpl();
+	private AdminBusinessServicesImpl AdminBusinessService = new AdminBusinessServicesImpl();
+	private AdminStartupServicesImpl AdminStartupService = new AdminStartupServicesImpl();
+
 	
 	
 	//Đăng Nhập Tài Khoản
@@ -37,6 +42,10 @@ public class AdminLoginController {
 		ss.setAttribute("tk", testtk);
 		if(testtk == 1)
 		{
+			m.addAttribute("listjob",AdminBusinessService.listJob());
+			m.addAttribute("listbusiness",AdminBusinessService.listBusiness());
+			m.addAttribute("listproject",AdminStartupService.listProject());
+			m.addAttribute("liststartup",AdminStartupService.listStartup());
 			return new ModelAndView("layoutAdmin/index");
 		}
 		else{

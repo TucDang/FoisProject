@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
 <title>Home</title>
@@ -221,93 +221,62 @@ $(document).ready(function(){
 				</ul>
 			<div id="myTabContent" class="tab-content">
 			  <div role="tabpanel" class="tab-pane fade in active" id="home" aria-labelledby="home-tab">
+			  <c:forEach items="${listjob}" var="postJob">
 			    <div class="events_box">
-			    	<div class="event_left"><div class="event_left-item">
-			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
-			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
+			    
+			    	<div class="event_left">
+			    		<div class="event_left-item">
+			    	
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>${postJob.getNgaydangviec().getDate()}/${postJob.getNgaydangviec().getMonth()}/${postJob.getNgaydangviec().getYear()}</div>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"> TP.HCM </i></div></br>
 			    		<div class="icon_2">
 			    		  <div class="speaker">
 			    			  <i class="fa fa-user"></i>
 			    			  <div class="speaker_item">
-			    			     <a href="#">Lorem Ipsum</a>
+			    			     <a href="#">Liên Lạc</a>
 			    			  </div>
 			    			  <div class="clearfix"></div></div>
 			    		  </div>
 			    		</div>
 			    	</div>
+			    	
 			    	<div class="event_right">
-			    		  <h3><a href="#">Welcoming and introduction</a></h3>
-						  <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. <a href="#">Read More</a></p>
-						  <img src="resources/images/t9.jpg" class="img-responsive" alt=""/>	
-		    	    </div>
-		    	    <div class="clearfix"></div>
-			   </div>
-			   <div class="events_box">
-			    	<div class="event_left"><div class="event_left-item">
-			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
-			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
-			    		<div class="icon_2">
-			    		  <div class="speaker">
-			    			  <i class="fa fa-user"></i>
-			    			  <div class="speaker_item">
-			    			     <a href="#">Lorem Ipsum</a>
-			    			  </div>
-			    			  <div class="clearfix"></div></div>
-			    		  </div>
-			    		</div>
-			    	</div>
-			    	<div class="event_right">
-			    		  <h3><a href="#">Welcoming and introduction</a></h3>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form <a href="#">Read More</a></p>
+			    		  
+			    		  <h3><a href="#">${postJob.getTencongviec()}</a></h3>
+						  <p>${postJob.getMota()}<a href="">Read More</a></p>
 						  <img src="images/t5.jpg" class="img-responsive" alt=""/>	
+						
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			   </div>
+			   </c:forEach>
+			   
 			  </div>
 			  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
+			  <c:forEach items="${listproject}" var="project"> 
 			    <div class="events_box">
 			    	<div class="event_left"><div class="event_left-item">
-			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
-			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
+			    		<div class="icon_2"><i class="fa fa-clock-o"> ${project.getKhoangthoigian()} ngày</i></div></br>
+			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>TP.HCM</div>
 			    		<div class="icon_2">
 			    		  <div class="speaker">
 			    			  <i class="fa fa-user"></i>
 			    			  <div class="speaker_item">
-			    			     <a href="#">Lorem Ipsum</a>
+			    			     <a href="#">Liên Lạc</a>
 			    			  </div>
 			    			  <div class="clearfix"></div></div>
 			    		  </div>
 			    		</div>
 			    	</div>
 			    	<div class="event_right">
-			    		  <h3><a href="#">Welcoming and introduction</a></h3>
-						  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form <a href="#">Read More</a></p>
+			    		  <h3><a href="#">${project.getTenduan()}</a></h3>
+						  <p>${project.getMota()}<a href="#">Read More</a></p>
 						  <img src="resources/images/t8.jpg" class="img-responsive" alt=""/>	
 		    	    </div>
 		    	    <div class="clearfix"></div>
 			   </div>
-			   <div class="events_box">
-			    	<div class="event_left"><div class="event_left-item">
-			    		<div class="icon_2"><i class="fa fa-clock-o"></i>09:00 - 10:30</div>
-			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>Room A</div>
-			    		<div class="icon_2">
-			    		  <div class="speaker">
-			    			  <i class="fa fa-user"></i>
-			    			  <div class="speaker_item">
-			    			     <a href="#">Lorem Ipsum</a>
-			    			  </div>
-			    			  <div class="clearfix"></div></div>
-			    		  </div>
-			    		</div>
-			    	</div>
-			    	<div class="event_right">
-			    		  <h3><a href="#">Welcoming and introduction</a></h3>
-						  <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature <a href="#">Read More</a></p>
-						  <img src="resources/images/t2.jpg" class="img-responsive" alt=""/>	
-		    	    </div>
-		    	    <div class="clearfix"></div>
+			   </c:forEach>
 			   </div>
-			</div>
 			<div role="tabpanel" class="tab-pane fade" id="profile1" aria-labelledby="profile-tab1">
 			    <div class="events_box">
 			    	<div class="event_left"><div class="event_left-item">

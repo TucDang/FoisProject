@@ -5,7 +5,7 @@
  "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd"> 
 	
 <hibernate-mapping package="com.example.model">
-   <class name="thongtinduan" table="thongtinduan">      
+   <class name="thongtinduan" table="thongtin_duan">      
       <id name="idthongtin_duan" type="int" column="idthongtin_duan">
          <generator class="native"/>
       </id>
@@ -13,6 +13,6 @@
       <property name="mota" column="mota" type="java.lang.String"/>
       <property name="khoangthoigian" column="khoangthoigian" type="int"/>
       <property name="chiphi" column="chiphi" type="int"/>
-      <property name="idkhoingiep" column="idkhoingiep" type="int"/>
+      <property name="idkhoinghiep" column="idkhoinghiep" type="int"/>
    </class>
 </hibernate-mapping>

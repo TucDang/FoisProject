@@ -460,6 +460,10 @@ input[type="radio"]:checked + label span {
 	background-color: #3275bb;
 	color: white;
 }
+.accept{
+	background-color: #ff9800;
+	color: white;
+}
 .panel>.table-responsive:last-child>.table:last-child, .panel>.table:last-child {
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -668,3 +672,4 @@ input[type="radio"]:checked + label span {
 		padding-left: 11px;
 	}
 }
+

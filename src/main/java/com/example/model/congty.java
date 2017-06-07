@@ -7,7 +7,7 @@ public class congty {
 	private String tencongty;
 	private String diachi;
 	private String sodienthoai;
-	private int Fax;
+	private String Fax;
 	private String Email;
 	private Date ngaythanhlap;
 	private String tendangnhap;
@@ -42,11 +42,11 @@ public class congty {
 	public void setSodienthoai(String sodienthoai) {
 		this.sodienthoai = sodienthoai;
 	}
-	public int getFax() {
+	public String getFax() {
 		return Fax;
 	}
-	public void setFax(int fax) {
-		Fax = fax;
+	public void setFax(String fax) {
+		this.Fax = fax;
 	}
 	public String getEmail() {
 		return Email;

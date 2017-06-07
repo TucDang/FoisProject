@@ -6,7 +6,7 @@ public class thongtinduan {
 	private String mota;
 	private int khoangthoigian;
 	private int chiphi;
-	private int idkhoingiep;
+	private int idkhoinghiep;
 
 	public thongtinduan(){}
 	
@@ -40,10 +40,10 @@ public class thongtinduan {
 	public void setChiphi(int chiphi) {
 		this.chiphi = chiphi;
 	}
-	public int getIdkhoingiep() {
-		return idkhoingiep;
+	public int getIdkhoinghiep() {
+		return idkhoinghiep;
 	}
-	public void setIdkhoingiep(int idkhoingiep) {
-		this.idkhoingiep = idkhoingiep;
+	public void setIdkhoinghiep(int idkhoinghiep) {
+		this.idkhoinghiep = idkhoinghiep;
 	}
 	}

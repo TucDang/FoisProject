@@ -67,54 +67,11 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   		<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
+                        <td><button href="" class="templatemo-link update">Sửa</button></td>
+                    	<td><button href="" class="templatemo-link accept">Duyệt</button></td>
+                   		<td><button href="" class="templatemo-link delete">Xóa</button></td>
                       </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   		<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                    	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>                    
+                           
                     </tbody>
                   </table>    
                 </div>                          

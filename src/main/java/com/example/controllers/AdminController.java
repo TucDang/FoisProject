@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 
 import com.example.services.AdminBusinessServicesImpl;
+import com.example.services.AdminStartupServicesImpl;
 
 
 @Controller
@@ -14,12 +15,16 @@ import com.example.services.AdminBusinessServicesImpl;
 public class AdminController {
 
 	private AdminBusinessServicesImpl AdminBusinessService = new AdminBusinessServicesImpl();
+	private AdminStartupServicesImpl AdminStartupService = new AdminStartupServicesImpl();
 
 	
 	
 	@RequestMapping(value = "/index", method = RequestMethod.GET)
 	   public String index(Model m) {
-		m.addAttribute("listjob",AdminBusinessService.listJob());    
+		m.addAttribute("listjob",AdminBusinessService.listJob());
+		m.addAttribute("listbusiness",AdminBusinessService.listBusiness());
+		m.addAttribute("listproject",AdminStartupService.listProject());
+		m.addAttribute("liststartup",AdminStartupService.listStartup());
 	    return "layoutAdmin/index";
 	}
 	

@@ -65,9 +65,9 @@
                         <td>${postJob.getIdcongty()}</td>
                         <td>${postJob.getIdlinhvuc()}</td>
                         <td>${postJob.getNgaydangviec()}</td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                    	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   		<td><a href="" class="templatemo-link delete">Xóa</a></td>
+                        <td><button href="" class="templatemo-link update">Sửa</button></td>
+                    	<td><button href="" class="templatemo-link accept">Duyệt</button></td>
+                   		<td><button href="" class="templatemo-link delete">Xóa</button></td>
                       </tr>
                       </c:forEach>       
                     </tbody>
@@ -88,7 +88,8 @@
                      <td>STT</td>
                      <td>Tên Doanh Nghiệp</td>
                      <td>Lĩnh Vực</td>
-                     <td>Ngày Đăng Ký</td>
+                     <td>Tên Đăng Nhập</td>
+                     <td>Mật Khẩu</td>
                      <td>Chỉnh Sửa</td>
                      <td>Duyệt Thông Tin</td>
                      <td>Xóa Tài Khoản</td>
@@ -96,55 +97,19 @@
                    </tr>
                  </thead>
                  <tbody>
+                 <c:forEach items="${listbusiness}" var="business"> 
                    <tr>
                  
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
+                     <td>${business.getIdcongty()}</td>
+                     <td>${business.getTencongty()}</td>
+                     <td>${business.getIdlinhvuc()}</td>
+                     <td>${business.getTendangnhap()}</td>
+                     <td>${business.getMatkhau()}</td>
+                     <td><button href="" class="templatemo-link update">Sửa</button></td>
+                     <td><button href="" class="templatemo-link accept">Duyệt</button></td>
+                   	 <td><button href="" class="templatemo-link delete">Xóa</button></td>
                    </tr>
-                   <tr>
-                  
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>
-                   <tr>
-               
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>
-                   <tr>
-               
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>
-                   <tr>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>                    
+                  </c:forEach>      
                  </tbody>
                </table>    
              </div>                          
@@ -165,8 +130,7 @@
                       <tr>
                         <td>Tên Post</td>
                         <td>Người Quản Lý</td>
-                        <td>Lĩnh Vực</td>
-                        <td>Ngày Đăng</td>
+                        <td>Chi Phí</td>
                         <td>Chỉnh Sửa</td>
                     	<td>Duyệt Bài</td>
                     	<td>Xóa Bài</td>
@@ -174,56 +138,18 @@
                       </tr>
                     </thead>
                     <tbody>
+                    <c:forEach items="${listproject}" var="project"> 
                       <tr>
                    
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
+                        <td>${project.getTenduan()}</td>
+                        <td>${project.getIdkhoinghiep()}</td>
+                        <td>${project.getChiphi()}</td>
+                        
+                        <td><button href="" class="templatemo-link update">Sửa</button></td>
+                    	<td><button href="" class="templatemo-link accept">Duyệt</button></td>
+                   		<td><button href="" class="templatemo-link delete">Xóa</button></td>
                       </tr>
-                      <tr>
-                     
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                    
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                    
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                  
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     	<td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>                    
+                     </c:forEach>  
                     </tbody>
                   </table>    
                 </div>                          
@@ -243,6 +169,8 @@
                      <td>Người Khởi Nghiệp</td>
                      <td>Lĩnh Vực</td>
                      <td>Ngày Đăng Ký</td>
+                     <td>Tên Đăng Nhập</td>
+                     <td>Mật Khẩu</td>
                      <td>Chỉnh Sửa</td>
                      <td>Duyệt Thông Tin</td>
                      <td>Xóa Tài Khoản</td>
@@ -250,56 +178,20 @@
                    </tr>
                  </thead>
                  <tbody>
+                 <c:forEach items="${liststartup}" var="startup"> 
                    <tr>
                  
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
+                     <td>${startup.getIdkhoinghiep()}</td>
+                     <td>${startup.getTenkhoinghiep()}</td>
+                     <td>${startup.getIdlinhvuc()}</td>
+                     <td>${startup.getNgaykhoinghiep()}</td>
+                     <td>${startup.getTendangnhap()}</td>
+                     <td>${startup.getMatkhau()}</td>
+                     <td><button href="" class="templatemo-link update">Sửa</button></td>
+                     <td><button href="" class="templatemo-link accept">Duyệt</button></td>
+                   	 <td><button href="" class="templatemo-link delete">Xóa</button></td>
                    </tr>
-                   <tr>
-                  
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>
-                   <tr>
-               
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>
-                   <tr>
-               
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                   	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>
-                   <tr>
-                
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                     <td></td>
-                   	 <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                     <td><a href="" class="templatemo-link">Duyệt</a></td>
-                  	 <td><a href="" class="templatemo-link delete">Xóa</a></td>
-                   </tr>                    
+                   </c:forEach>       
                  </tbody>
                </table>    
              </div>                          
@@ -334,45 +226,10 @@
                         <td></td>
                         <td></td>
                         <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
+                        <td><button href="" class="templatemo-link update">Sửa</button></td>
+                   		<td><button href="" class="templatemo-link delete">Xóa</button></td>
                       </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>
-                      <tr>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td><a href="" class="templatemo-edit-btn">Sửa</a></td>
-                   	 	<td><a href="" class="templatemo-link delete">Xóa</a></td>
-                      </tr>                    
+                                
                     </tbody>
                   </table>    
                 </div>                          

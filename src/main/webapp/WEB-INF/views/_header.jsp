@@ -11,7 +11,7 @@
 		        <span class="icon-bar"></span>
 		        <span class="icon-bar"></span>
 	        </button>
-	        <a class="navbar-brand" href="homepage">UIT-Team</a>
+	        <a class="navbar-brand" href="homepage">FOIS-VN</a>
 	    </div>
 	    <!--/.navbar-header-->
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
@@ -77,12 +77,12 @@
                           </div>
                           <div class="tab-pane" id="women">
                             <ul class="nav-list list-inline">
-                                <li><a href="admission.html"><img src="resources/views/images/t1.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/views/images/t2.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/views/images/t3.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/views/images/t4.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/views/images/t5.jpg" class="img-responsive" alt=""/></a></li>
-                                <li><a href="admission.html"><img src="resources/views/images/t6.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href=""><img src="resources/views/images/t1.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href=""><img src="resources/views/images/t2.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href=""><img src="resources/views/images/t3.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href=""><img src="resources/views/images/t4.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href=""><img src="resources/views/images/t5.jpg" class="img-responsive" alt=""/></a></li>
+                                <li><a href=""><img src="resources/views/images/t6.jpg" class="img-responsive" alt=""/></a></li>
                             </ul>
                          </div>
                        </div>

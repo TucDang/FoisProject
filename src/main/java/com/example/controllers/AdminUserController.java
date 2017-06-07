@@ -25,7 +25,6 @@ public class AdminUserController {
 	//Xóa tài khoản
 	@RequestMapping(value = "/remove/{id}", method = RequestMethod.GET)
 	public String removeAccount(@PathVariable("id") int id){
-	
 		accountService.deleteAccount(id);
 		return "redirect:/manage-user";
 	}
