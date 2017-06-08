@@ -22,5 +22,6 @@
       <property name="tinhtrang" column="tinhtrang" type="int"/>
       <property name="idcongty" column="idcongty" type="int"/>
       <property name="idlinhvuc" column="idlinhvuc" type="int"/>
+      <property name="iddiadiem" column="iddiadiem" type="int"/>
    </class>
 </hibernate-mapping>

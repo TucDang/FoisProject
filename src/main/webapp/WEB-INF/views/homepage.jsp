@@ -189,12 +189,20 @@ $(document).ready(function(){
                 <div class="news">
                     <h1>Tin tức mới nhất</h1>
                     <div class="section-content">
-                     <!--<c:forEach items="${a}" var="ab">-->
+                     <c:forEach items="${listproject}" var="da">
                         <article>
-                            <figure class="date"><i class="fa fa-file-o"></i></figure>
-                            <a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
+                            <figure class="date"><i class="fa fa-file-o"> ${da.getNgaydang1()}</i></figure>
+                            <a href="#">${da.getMota()}</a>
                         </article>
-                        <!--</c:forEach>-->
+                        
+                        </c:forEach>
+                        <c:forEach items="${listjob}" var="job">
+	                        <article>
+	                            <figure class="date"><i class="fa fa-file-o"> ${job.getNgaydangviec1()}</i></figure>
+	                            <a href="#">${job.getMota()}</a>
+	                        </article>
+                        
+                        </c:forEach>
                         
                         
                     </div><!-- /.section-content -->
@@ -218,7 +226,7 @@ $(document).ready(function(){
 			    	<div class="event_left">
 			    		<div class="event_left-item">
 			    	
-			    		<div class="icon_2"><i class="fa fa-clock-o"></i>${postJob.getNgaydangviec().getDate()}/${postJob.getNgaydangviec().getMonth()}/${postJob.getNgaydangviec().getYear()}</div>
+			    		<div class="icon_2"><i class="fa fa-clock-o"></i>${postJob.getNgaydangviec1()}</div>
 			    		<div class="icon_2"><i class="fa fa-location-arrow"> TP.HCM </i></div></br>
 			    		<div class="icon_2">
 			    		  <div class="speaker">
@@ -247,7 +255,7 @@ $(document).ready(function(){
 			  <c:forEach items="${listproject}" var="project"> 
 			    <div class="events_box">
 			    	<div class="event_left"><div class="event_left-item">
-			    		<div class="icon_2"><i class="fa fa-clock-o"> ${project.getNgaydang().getDate()}/${project.getNgaydang().getMonth()}/${project.getNgaydang().getYear()}</i></div></br>
+			    		<div class="icon_2"><i class="fa fa-clock-o"> ${project.getNgaydang1()}</i></div></br>
 			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>TP.HCM</div>
 			    		<div class="icon_2">
 			    		  <div class="speaker">
@@ -334,18 +342,19 @@ $(document).ready(function(){
    </div>
    <div class="bottom_content">  
    	 <h3>CÔNG VIỆC NỔI BẬT</h3>
-     <div class="grid_2">
+     <div class="grid_2" >
+     <c:forEach items="${listjob1}" var="job">
      	<div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
                 <img src="resources/images/t15.jpg" class="img-responsive" alt=""/>
                 <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
-               <h4><a href="#">Lorem Ipsum</a></h4>
-               <p>Mauris diam massa, malesuada a sapien in, semper vehicula erat. Vivamus sagittis leo a ullamcorper ultricies. Suspendisse placerat mattis arcu nec por</p>
+               <h4><a href="#"></a>${job.getTencongviec()}</h4>
+               <p>${job.getMota()}</p>
                 <span>
-                  <a href="students.html">School Studies</a>
-                  <a href="students.html">College Studies</a>
+                  <a href="">${job.getIdlinhvuc()}</a>
+                  
                 </span>
                 <a href="events.html">
                     <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
@@ -353,103 +362,17 @@ $(document).ready(function(){
             </div>
             <div class="clearfix"> </div>
         </div>
-        <div class="col-md-4 portfolio-left">
-            <div class="portfolio-img event-img">
-                <img src="resources/images/t10.jpg" class="img-responsive" alt=""/>
-                 <div class="over-image"></div>
-            </div>
-            <div class="portfolio-description">
-               <h4><a href="#">Lorem Ipsum</a></h4>
-               <p>Mauris diam massa, malesuada a sapien in, semper vehicula erat. Vivamus sagittis leo a ullamcorper ultricies. Suspendisse placerat mattis arcu nec por</p>
-               <span>
-                  <a href="students.html">School Studies</a>
-                  <a href="students.html">College Studies</a>
-                </span>
-                <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
-                </a>
-            </div>
-            <div class="clearfix"> </div>
+        </c:forEach>
+        
         </div>
-        <div class="col-md-4 portfolio-left">
-            <div class="portfolio-img event-img">
-                <img src="resources/images/t12.jpg" class="img-responsive" alt=""/>
-                 <div class="over-image"></div>
-            </div>
-            <div class="portfolio-description">
-               <h4><a href="#">Lorem Ipsum</a></h4>
-               <p>Mauris diam massa, malesuada a sapien in, semper vehicula erat. Vivamus sagittis leo a ullamcorper ultricies. Suspendisse placerat mattis arcu nec por</p>
-               <span>
-                  <a href="students.html">School Studies</a>
-                  <a href="students.html">College Studies</a>
-                </span>
-                <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
-                </a>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="clearfix"> </div>
-     </div>
-     <div class="grid_3">
-     	<div class="col-md-4 portfolio-left">
-            <div class="portfolio-img event-img">
-                <img src="resources/images/t11.jpg" class="img-responsive" alt=""/>
-                 <div class="over-image"></div>
-            </div>
-            <div class="portfolio-description">
-               <h4><a href="#">Lorem Ipsum</a></h4>
-               <p>Mauris diam massa, malesuada a sapien in, semper vehicula erat. Vivamus sagittis leo a ullamcorper ultricies. Suspendisse placerat mattis arcu nec por</p>
-                <span>
-                  <a href="students.html">School Studies</a>
-                  <a href="students.html">College Studies</a>
-                </span>
-                <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
-                </a>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="col-md-4 portfolio-left">
-            <div class="portfolio-img event-img">
-                <img src="resources/images/t14.jpg" class="img-responsive" alt=""/>
-                 <div class="over-image"></div>
-            </div>
-            <div class="portfolio-description">
-               <h4><a href="#">Lorem Ipsum</a></h4>
-               <p>Mauris diam massa, malesuada a sapien in, semper vehicula erat. Vivamus sagittis leo a ullamcorper ultricies. Suspendisse placerat mattis arcu nec por</p>
-               <span>
-                  <a href="students.html">School Studies</a>
-                  <a href="students.html">College Studies</a>
-                </span>
-                <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
-                </a>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="col-md-4 portfolio-left">
-            <div class="portfolio-img event-img">
-                <img src="resources/images/t13.jpg" class="img-responsive" alt=""/>
-                 <div class="over-image"></div>
-            </div>
-            <div class="portfolio-description">
-               <h4><a href="#">Lorem Ipsum</a></h4>
-               <p>Mauris diam massa, malesuada a sapien in, semper vehicula erat. Vivamus sagittis leo a ullamcorper ultricies. Suspendisse placerat mattis arcu nec por</p>
-               <span>
-                  <a href="students.html">School Studies</a>
-                  <a href="students.html">College Studies</a>
-                </span>
-                <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
-                </a>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-        <div class="clearfix"> </div>
-     </div>
+         
     </div>
-   <%@include file="_footer.jsp" %>
+    <%@include file="_footer.jsp" %>
+    
+   
+  
+   
+   
 <script src="resources/js/jquery.countdown.js"></script>
 <script src="resources/js/script.js"></script>
 </body>

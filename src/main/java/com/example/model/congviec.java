@@ -1,5 +1,7 @@
 package com.example.model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class congviec {
@@ -11,6 +13,7 @@ public class congviec {
 	private int tinhtrang;
 	private int idcongty;
 	private int idlinhvuc;
+	private int iddiadiem;
 	
 	public congviec(){}
 	
@@ -26,8 +29,16 @@ public class congviec {
 	public void setTencongviec(String tencongviec) {
 		this.tencongviec = tencongviec;
 	}
+	public String getNgaydangviec1() {
+		DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+		String dateString  = df.format(this.ngaydangviec);
+		
+		return dateString;
+	}
 	public Date getNgaydangviec() {
-		return ngaydangviec;
+		
+		
+		return this.ngaydangviec;
 	}
 	public void setNgaydangviec(Date ngaylamviec) {
 		this.ngaydangviec = ngaylamviec;
@@ -62,6 +73,11 @@ public class congviec {
 	public void setIdlinhvuc(int idlinhvuc) {
 		this.idlinhvuc = idlinhvuc;
 	}
-	
+	public int getIddiadiem() {
+		return iddiadiem;
+	}
+	public void setIddiadiem(int iddiadiem) {
+		this.iddiadiem = iddiadiem;
+	}
 	
 }
