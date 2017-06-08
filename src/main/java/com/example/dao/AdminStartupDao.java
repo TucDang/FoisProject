@@ -11,10 +11,11 @@ public interface AdminStartupDao {
 
 	 public List<thongtinduan> listProject();
 	 
+	 public List<thongtinduan> listProject3();
+	 
 	 public thongtinduan getProject(int id);
 	 
 	 public void deleteProject(int id);
-	 
 	 
 	 public void addStartup(khoinghiep kn);
 	 

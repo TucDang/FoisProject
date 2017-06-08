@@ -18,5 +18,6 @@
             <mapping resource="khoinghiep.hbm.xml"/>
             <mapping resource="congty.hbm.xml"/>
             <mapping resource="congviec.hbm.xml"/>
+            <mapping resource="diadiem.hbm.xml"/>
       </session-factory>
 </hibernate-configuration>

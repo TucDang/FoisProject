@@ -17,12 +17,12 @@
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
 	        <ul class="nav navbar-nav ">
 		        <li class="dropdown">
-		            <a href="login"><i class="fa fa-user"></i><span>Đăng nhập</span></a>
+		            <a href="login"><i class="fa fa-user"></i><span>Đăng Nhập</span></a>
 		        </li>
 		        
 		        
 		        <li class="dropdown">
-		            <a href="#"><i class="fa fa-user"></i><span>Đăng kí</span></a>
+		            <a href="#"><i class="fa fa-user"></i><span>Đăng Ký</span></a>
 		            
 		        </li>
 		        <li class="dropdown">

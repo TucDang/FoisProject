@@ -34,6 +34,18 @@ public class AdminBusinessDaoImpl implements AdminBusinessDao{
 		tran.commit();
 		return l;
 	}
+	
+
+	@Override
+	public List<congviec> listJob3() {
+		// TODO Auto-generated method stub
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		Transaction tran = session.beginTransaction();
+		List<congviec> l = session.createQuery("from congviec  order by idcongviec desc").setMaxResults(3).list();
+		tran.commit();
+		return l;
+	}
+
 
 	@Override
 	public congviec getJob(int id) {

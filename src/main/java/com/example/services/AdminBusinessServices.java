@@ -16,6 +16,7 @@ public interface AdminBusinessServices {
 	 
 	 public void deleteJob(int id);
 	 
+	 public List<congviec> listJob3();
 	 
 	 public void addBusiness(congty ct);
 	 

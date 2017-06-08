@@ -13,6 +13,7 @@
       <property name="mota" column="mota" type="java.lang.String"/>
       <property name="khoangthoigian" column="khoangthoigian" type="int"/>
       <property name="chiphi" column="chiphi" type="int"/>
+      <property name="ngaydang" column="ngaydang" type="java.util.Date"/>
       <property name="idkhoinghiep" column="idkhoinghiep" type="int"/>
    </class>
 </hibernate-mapping>

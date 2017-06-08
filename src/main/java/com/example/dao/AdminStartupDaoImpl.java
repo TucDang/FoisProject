@@ -36,7 +36,16 @@ public class AdminStartupDaoImpl implements AdminStartupDao{
 		tran.commit();
 		return l;
 	}
-
+	
+	@Override
+	public List<thongtinduan> listProject3() {
+		// TODO Auto-generated method stub
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		Transaction tran = session.beginTransaction();
+		List<thongtinduan> l = session.createQuery("from thongtinduan order by idthongtin_duan desc").setMaxResults(3).list();
+		tran.commit();
+		return l;
+	}
 	@Override
 	public thongtinduan getProject(int id) {
 		// TODO Auto-generated method stub
@@ -98,5 +107,7 @@ public class AdminStartupDaoImpl implements AdminStartupDao{
 		}
 		tran.commit();
 	}
+
+	
 	}
 

@@ -11,6 +11,8 @@ import com.example.model.congviec;
 
 	 public List<congviec> listJob();
 	 
+	 public List<congviec> listJob3();
+	 
 	 public congviec getJob(int id);
 	 
 	 public void deleteJob(int id);

@@ -66,4 +66,10 @@ public class AdminBusinessServicesImpl implements AdminBusinessServices{
 		this.AdminBusinessDao.deleteBusiness(id);
 	}
 
+	@Override
+	public List<congviec> listJob3() {
+		// TODO Auto-generated method stub
+		return this.AdminBusinessDao.listJob3();
+	}
+
 }

@@ -139,7 +139,7 @@ $(document).ready(function(){
 		 <div class="col-sm-10 dropdown-buttons">   
 			<div class="col-sm-3 dropdown-button">           			
     		  <div class="input-group">
-                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Từ khóa" type="text" required="">
+                <input class="form-control has-dark-background" name="slider-name" id="slider-name" placeholder="Từ khóa" type="text">
               </div>
 			</div>
 			  <div class="col-sm-3 dropdown-button">           			
@@ -155,21 +155,21 @@ $(document).ready(function(){
     	   <div class="col-sm-3 dropdown-button">           			
     		  <div class="section_1">
 				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
-					<option value="null">Lĩnh vực</option>
-					<option value="null">IT</option>         
-					<option value="AX">Tài chính</option>
-					<option value="AX">Môi trường</option>
-					<option value="AX">Nhà đất</option>
+				 	<option value="null">Lĩnh Vực</option>
+					 <c:forEach items="${listfields}" var="lv">
+						<option value="${lv.getIdlinhvuc()}">${lv.getLinhvuc()}</option>
+					</c:forEach>
+					
 				 </select>
 			  </div>
 			</div>
 		     <div class="col-sm-3 dropdown-button">
 			  <div class="section_1">
 				 <select id="country" onchange="change_country(this.value)" class="frm-field required">
-					<option value="null">Địa điểm</option>
-					<option value="null">TP.HCM</option>         
-					<option value="AX">Hà Nội</option>
-					<option value="AX">Đà Nẵng</option>
+					<option value="null">Địa Điểm</option>
+					<c:forEach items="${listlocation}" var="dd">
+						<option value="${dd.getIddiadiem()}">${dd.getTendiadiem()}</option>
+					</c:forEach>
 				 </select>
 			  </div>
 			 </div>
@@ -189,22 +189,13 @@ $(document).ready(function(){
                 <div class="news">
                     <h1>Tin tức mới nhất</h1>
                     <div class="section-content">
+                     <!--<c:forEach items="${a}" var="ab">-->
                         <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>07-25-2015</figure>
+                            <figure class="date"><i class="fa fa-file-o"></i></figure>
                             <a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a>
                         </article>
-                        <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
-                            <a href="#">It is a long established fact that a reader will be distracted.</a>
-                        </article>
-                        <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
-                            <a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text.</a>
-                        </article>
-                        <article>
-                            <figure class="date"><i class="fa fa-file-o"></i>08-24-2014</figure>
-                            <a href="#">Contrary to popular belief, Lorem Ipsum is not simply random text.</a>
-                        </article>
+                        <!--</c:forEach>-->
+                        
                         
                     </div><!-- /.section-content -->
                     <a href="#" class="read-more">Tất cả</a>
@@ -215,8 +206,8 @@ $(document).ready(function(){
 		      <div class="but_list">
 		       <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
 				<ul id="myTab" class="nav nav-tabs nav-tabs1" role="tablist">
-				  <li role="presentation" ><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Doanh nghiệp</a></li>
-				  <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Ý tưởng hay</a></li>
+				  <li role="presentation" ><a href="#home" id="home-tab" role="tab" data-toggle="tab" aria-controls="home" aria-expanded="true">Công Việc Mới</a></li>
+				  <li role="presentation" class="active"><a href="#profile" role="tab" id="profile-tab" data-toggle="tab" aria-controls="profile">Ý Tưởng Hay</a></li>
 				  
 				</ul>
 			<div id="myTabContent" class="tab-content">
@@ -256,7 +247,7 @@ $(document).ready(function(){
 			  <c:forEach items="${listproject}" var="project"> 
 			    <div class="events_box">
 			    	<div class="event_left"><div class="event_left-item">
-			    		<div class="icon_2"><i class="fa fa-clock-o"> ${project.getKhoangthoigian()} ngày</i></div></br>
+			    		<div class="icon_2"><i class="fa fa-clock-o"> ${project.getNgaydang().getDate()}/${project.getNgaydang().getMonth()}/${project.getNgaydang().getYear()}</i></div></br>
 			    		<div class="icon_2"><i class="fa fa-location-arrow"></i>TP.HCM</div>
 			    		<div class="icon_2">
 			    		  <div class="speaker">

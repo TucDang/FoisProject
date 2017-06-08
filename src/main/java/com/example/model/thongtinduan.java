@@ -1,11 +1,14 @@
 package com.example.model;
 
+import java.util.Date;
+
 public class thongtinduan {
 	private int idthongtin_duan;
 	private String tenduan;
 	private String mota;
 	private int khoangthoigian;
 	private int chiphi;
+	private Date ngaydang;
 	private int idkhoinghiep;
 
 	public thongtinduan(){}
@@ -39,6 +42,12 @@ public class thongtinduan {
 	}
 	public void setChiphi(int chiphi) {
 		this.chiphi = chiphi;
+	}
+	public Date getNgaydang() {
+		return ngaydang;
+	}
+	public void setNgaydang(Date ngaydang) {
+		this.ngaydang = ngaydang;
 	}
 	public int getIdkhoinghiep() {
 		return idkhoinghiep;

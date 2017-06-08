@@ -26,6 +26,11 @@ public class AdminStartupServicesImpl implements AdminStartupServices{
 		// TODO Auto-generated method stub
 		return this.AdminStartupDao.listProject();
 	}
+	@Override
+	public List<thongtinduan> listProject3() {
+		// TODO Auto-generated method stub
+		return this.AdminStartupDao.listProject3();
+	}
 
 	@Override
 	public thongtinduan getProject(int id) {
@@ -62,5 +67,7 @@ public class AdminStartupServicesImpl implements AdminStartupServices{
 		// TODO Auto-generated method stub
 		this.AdminStartupDao.deleteStartup(id);
 	}
+
+	
 
 }
