@@ -13,14 +13,8 @@ import com.example.util.HibernateUtil;
 
 @Repository("AccountDao")
 public class AccountDaoImpl implements AccountDao{
-	@Autowired
-	private SessionFactory sessionFactory;
 		 
-		 public void addAccount(taikhoanquantri tk) {
-		   sessionFactory.getCurrentSession().saveOrUpdate(tk);
-		   
 		 
-		 }
 
 		@Override
 		public List<taikhoanquantri> listAccount() {
@@ -56,6 +50,15 @@ public class AccountDaoImpl implements AccountDao{
 			}
 			tran.commit();
 		
+		}
+
+		@Override
+		public void addAccount(taikhoanquantri tk) {
+			// TODO Auto-generated method stub
+			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			Transaction tran = session.beginTransaction();
+			session.save(tk);		
+			tran.commit();
 		}
 
 	

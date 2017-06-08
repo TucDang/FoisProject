@@ -6,7 +6,7 @@ import com.example.model.taikhoanquantri;
 
 public interface AccountDao{
 	
-	public void addAccount(taikhoanquantri employee);
+	public void addAccount(taikhoanquantri tk);
 
 	 public List<taikhoanquantri> listAccount();
 	 

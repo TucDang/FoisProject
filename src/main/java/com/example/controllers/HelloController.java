@@ -32,20 +32,13 @@ public class HelloController {
 	   m.addAttribute("liststartup",AdminStartupService.listStartup());
       return "homepage";
    }
-   @RequestMapping(value = "/login", method = RequestMethod.GET)
-   public String login() {
-      return "login";
-   }
+  
 
    @RequestMapping(value = "/postcompany", method = RequestMethod.GET)
    public String postcompany() {
    return "postcompany";
    }
    
-   @RequestMapping(value = "/register", method = RequestMethod.GET)
-   public String register() {
-      return "register";
-   }
    
    @RequestMapping(value = "/startupdetail", method = RequestMethod.GET)
    public String startupdetail() {

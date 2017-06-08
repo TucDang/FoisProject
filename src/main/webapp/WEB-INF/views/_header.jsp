@@ -17,14 +17,18 @@
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
 	        <ul class="nav navbar-nav ">
 		        <li class="dropdown">
-		            <a href="login"><i class="fa fa-user"></i><span>Đăng nhập</span></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><span>Tài khoản</span></a>
+		            <ul class="dropdown-menu">
+			            <li class="dropdown">
+		            	<a href="login"><span>Đăng nhập</span></a>
+		       			 </li>
+			        	<li class="dropdown">
+			            <a href="register"><span>Đăng kí</span></a>
+			            
+			        	</li>
+			    	</ul>
 		        </li>
 		        
-		        
-		        <li class="dropdown">
-		            <a href="#"><i class="fa fa-user"></i><span>Đăng kí</span></a>
-		            
-		        </li>
 		        <li class="dropdown">
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Việt Nam</span></a>
 		            <ul class="dropdown-menu">
@@ -33,6 +37,8 @@
 			            <li><a href="#"><span><i class="flags japan"></i><span>Japan</span></span></a></li>
 			        </ul>
 		        </li>
+		        
+		        
 		    </ul>
 	    </div>
 	    <div class="clearfix"> </div>

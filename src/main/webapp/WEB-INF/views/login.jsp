@@ -75,7 +75,7 @@ $(document).ready(function(){
 		    	<input type="checkbox" name="remember" value="true"> Nhớ mật khẩu
 		    	<input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Đăng nhập">
 		    </div>
-	        <p>Bạn chưa có tài khoản? <a href="register.html" title="Sign Up">Đăng Kí</a></p>
+	        <p>Bạn chưa có tài khoản? <a href="register" title="Sign Up">Đăng Kí</a></p>
 		 </form>
 	   </div>
 	</div>
