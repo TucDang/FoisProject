@@ -3,14 +3,14 @@ package com.example.model;
 import java.util.Date;
 
 public class congviec {
-	private int idcongviec;
+	private int idcongviec;   ///////
 	private String tencongviec;
-	private Date ngaydangviec;
+	private Date ngaydangviec;   //////
 	private String mota;
 	private int luong;
 	private int tinhtrang;
-	private int idcongty;
-	private int idlinhvuc;
+	private congty idcongty; //// 
+	private linhvuc idlinhvuc;
 	
 	public congviec(){}
 	
@@ -50,16 +50,16 @@ public class congviec {
 	public void setTinhtrang(int tinhtrang) {
 		this.tinhtrang = tinhtrang;
 	}
-	public int getIdcongty() {
+	public congty getIdcongty() {
 		return idcongty;
 	}
-	public void setIdcongty(int idcongty) {
+	public void setIdcongty(congty idcongty) {
 		this.idcongty = idcongty;
 	}
-	public int getIdlinhvuc() {
+	public linhvuc getIdlinhvuc() {
 		return idlinhvuc;
 	}
-	public void setIdlinhvuc(int idlinhvuc) {
+	public void setIdlinhvuc(linhvuc idlinhvuc) {
 		this.idlinhvuc = idlinhvuc;
 	}
 	

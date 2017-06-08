@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     
-    <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
     
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     
@@ -44,8 +44,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		</div>
   	</div>
   </div>
-  
-
   <div class="grid_1">
      	<div class="container">
      		<div class="col-md-4">
@@ -83,7 +81,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				    		<div class="event_left-item">
 				    	
 				    		<div class="icon_2"><i class="fa fa-clock-o"></i>${postJob.getNgaydangviec().getDate()}/${postJob.getNgaydangviec().getMonth()}/${postJob.getNgaydangviec().getYear()}</div>
-				    		<div class="icon_2"><i class="fa fa-location-arrow"> TP.HCM </i></div></br>
+				    		<div class="icon_2"><i class="fa fa-location-arrow"> TP.HCM</i></div></br>
 				    		<div class="icon_2">
 				    		  <div class="speaker">
 				    			  <i class="fa fa-user"></i>
@@ -111,27 +109,36 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 			  <div role="tabpanel" class="tab-pane fade" id="profile" aria-labelledby="profile-tab">
 			    <div class="events_box">
 			    	<div class="event_left">
-			    	Thông tin:
+			    	<div>Thông tin:</div>
 			    	</div>
 			    	<div class="event_right">
-			    		  <form:form method="POST" action="/trangcanhandoanhnghiep">
+			    		  <form:form method="POST" action="http://localhost:8080/springapp/trangcanhandoanhnghiep">
 						   <div class="form-group">
+						   <form:label path="tencongviec">Tên công việc</form:label>
                 			<form:input path="tencongviec" autocomplete="off" class="required form-control" placeholder="Nhập họ và tên"/>
-                			</div>
-                			<div class="form-group">
-                			<form:input path="mota" autocomplete="off" class="required form-control" placeholder="Nhập họ và tên"/>
-                			</div>
-                			<div class="form-group">
-                			<form:input path="luong" autocomplete="off" class="required form-control" placeholder="Nhập họ và tên"/>
-                			</div>
-                			<div class="form-group">
-                			<form:input path="tinhtrang" autocomplete="off" class="required form-control" placeholder="Nhập họ và tên"/>
                 			</div>
                 			
                 			<div class="form-group">
+                			<form:label path="luong">Lương</form:label>
+                			<form:input path="luong" autocomplete="off" class="required form-control" placeholder="Nhập họ và tên"/>
+                			</div>
+                			
+             
+                			<div class="form-group">
+                			<form:label path="mota">Mô tả</form:label>
+                			<form:textarea path="mota" rows="5"   autocomplete="off" class="required form-control"/>
+                			</div>
+                			
+                			<div class="form-group">
+                			<form:label path="idlinhvuc">Lĩnh vực</form:label>
+                			<form:select path="idlinhvuc.idlinhvuc">
+				               <form:options items="${linhvuc}" itemValue="idlinhvuc"/>
+				            </form:select> 
+				            </div>
+				            
+                			<div class="form-group">
                 			<input type="submit" value="Submit" />
                 			</div>
-						    
 						         
 						</form:form>
 		    	    </div>

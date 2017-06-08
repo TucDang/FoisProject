@@ -22,7 +22,10 @@ public class AdminBusinessDaoImpl implements AdminBusinessDao{
 	@Override
 	public void addJob(congviec cv) {
 		// TODO Auto-generated method stub
-		 sessionFactory.getCurrentSession().saveOrUpdate(cv);
+		Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+		Transaction tran = session.beginTransaction();
+		session.save(cv);
+		tran.commit();
 	}
 
 	@Override

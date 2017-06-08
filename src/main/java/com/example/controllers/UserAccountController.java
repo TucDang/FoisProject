@@ -1,7 +1,14 @@
 package com.example.controllers;
 
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
 import javax.servlet.http.HttpServletRequest;
 
+import org.hibernate.Session;
+import org.hibernate.Transaction;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
@@ -10,7 +17,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.example.util.HibernateUtil;
+import com.example.model.congty;
 import com.example.model.congviec;
+import com.example.model.linhvuc;
 import com.example.model.taikhoanquantri;
 import com.example.services.AccountServicesImpl;
 import com.example.services.AdminBusinessServicesImpl;
@@ -34,9 +44,33 @@ public class UserAccountController {
 		m.addAttribute("listjob", adminBusiness.listJob3());
 	      return new ModelAndView("trangcanhandoanhnghiep","command",new congviec());
 	   }
-	@RequestMapping(value = "/trangcanhandoanhnghiep", method = RequestMethod.GET)
-	   public ModelAndView registersubmit(Model m) {
-		m.addAttribute("listjob", adminBusiness.listJob3());
+	@RequestMapping(value = "/trangcanhandoanhnghiep", method = RequestMethod.POST)
+	   public ModelAndView registersubmit(Model m,@ModelAttribute("Spring")congviec cv) {
+		  m.addAttribute("listjob", adminBusiness.listJob3());
+		  cv.setTinhtrang(1);
+		  cv.setNgaydangviec(new Date());
+		  //cv.setIdcongty();
+		  adminBusiness.addJob(cv);
 	      return new ModelAndView("trangcanhandoanhnghiep","command",new congviec());
 	   }
+	
+	@ModelAttribute("linhvuc")
+	   public Map<linhvuc, String> getLinhvuc()
+	   {
+			Session session = HibernateUtil.getSessionFactory().getCurrentSession();
+			Transaction tran = session.beginTransaction();
+		 	List<linhvuc> list = session.createQuery("from linhvuc").list();
+		 	Map<linhvuc, String> linhvuc = new HashMap<linhvuc, String>();
+		 	 if(list != null && !list.isEmpty())
+		        {
+		            for(linhvuc lv : list)
+		            {
+		            	linhvuc.put(lv, lv.getLinhvuc());
+		            }
+		        }
+			
+	        tran.commit();
+	      return linhvuc;
+	   }
+	
 }

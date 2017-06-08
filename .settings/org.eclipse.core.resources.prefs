@@ -2,6 +2,7 @@ eclipse.preferences.version=1
 encoding//src/main/java/com/example/controllers/AdminController.java=UTF-8
 encoding//src/main/java/com/example/controllers/AdminLoginController.java=UTF-8
 encoding//src/main/java/com/example/controllers/AdminUserController.java=UTF-8
+encoding//src/main/java/com/example/controllers/UserAccountController.java=UTF-8
 encoding//src/main/java/com/example/dao/AccountDao.java=UTF-8
 encoding//src/main/java/com/example/dao/AccountDaoImpl.java=UTF-8
 encoding//src/main/webapp/WEB-INF/views/homepage.jsp=UTF-8

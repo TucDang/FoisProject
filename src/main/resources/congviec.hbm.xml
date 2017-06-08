@@ -20,7 +20,9 @@
       <property name="mota" column="mota" type="java.lang.String"/>
       <property name="luong" column="luong" type="int"/>
       <property name="tinhtrang" column="tinhtrang" type="int"/>
-      <property name="idcongty" column="idcongty" type="int"/>
-      <property name="idlinhvuc" column="idlinhvuc" type="int"/>
+      <many-to-one name="idcongty" column="idcongty" 
+       class="com.example.model.congty"  not-null="true"/>
+      <many-to-one name="idlinhvuc" column="idlinhvuc" 
+       class="com.example.model.linhvuc"  not-null="true"/>
    </class>
 </hibernate-mapping>
