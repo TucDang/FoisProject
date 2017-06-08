@@ -16,15 +16,16 @@
 	    <!--/.navbar-header-->
 	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px !important;">
 	        <ul class="nav navbar-nav ">
+		       
 		        <li class="dropdown">
-		            <a href="login"><i class="fa fa-user"></i><span>Đăng Nhập</span></a>
+		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i><span>Tài khoản</span></a>
+		            <ul class="dropdown-menu">
+			            <li><a href="login"><span><span>Đăng Nhập</span></span></a></li>
+			            <li><a href="register"><span><span>Đăng Ký</span></span></a></li>
+			        </ul>
 		        </li>
 		        
 		        
-		        <li class="dropdown">
-		            <a href="#"><i class="fa fa-user"></i><span>Đăng Ký</span></a>
-		            
-		        </li>
 		        <li class="dropdown">
 		            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-globe"></i><span>Việt Nam</span></a>
 		            <ul class="dropdown-menu">
