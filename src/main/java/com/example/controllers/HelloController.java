@@ -28,6 +28,7 @@ public class HelloController {
 	   m.addAttribute("listlocation",LocationServices.listLocation());
 	   m.addAttribute("listfields",FieldsServices.listField());
 	   m.addAttribute("listjob",AdminBusinessService.listJob3());
+	   m.addAttribute("listjob1",AdminBusinessService.listJob());
 	   m.addAttribute("listbusiness",AdminBusinessService.listBusiness());
 	   m.addAttribute("listproject",AdminStartupService.listProject3());
 	   m.addAttribute("liststartup",AdminStartupService.listStartup());

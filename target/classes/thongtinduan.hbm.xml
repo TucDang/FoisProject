@@ -15,5 +15,6 @@
       <property name="chiphi" column="chiphi" type="int"/>
       <property name="ngaydang" column="ngaydang" type="java.util.Date"/>
       <property name="idkhoinghiep" column="idkhoinghiep" type="int"/>
+      <property name="iddiadiem" column="iddiadiem" type="int"/>
    </class>
 </hibernate-mapping>

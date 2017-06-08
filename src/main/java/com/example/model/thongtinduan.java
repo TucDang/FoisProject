@@ -1,5 +1,7 @@
 package com.example.model;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class thongtinduan {
@@ -10,6 +12,7 @@ public class thongtinduan {
 	private int chiphi;
 	private Date ngaydang;
 	private int idkhoinghiep;
+	private int iddiadiem;
 
 	public thongtinduan(){}
 	
@@ -43,6 +46,12 @@ public class thongtinduan {
 	public void setChiphi(int chiphi) {
 		this.chiphi = chiphi;
 	}
+	public String getNgaydang1() {
+		DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
+		String dateString  = df.format(this.ngaydang);
+		
+		return dateString;
+	}
 	public Date getNgaydang() {
 		return ngaydang;
 	}
@@ -54,5 +63,11 @@ public class thongtinduan {
 	}
 	public void setIdkhoinghiep(int idkhoinghiep) {
 		this.idkhoinghiep = idkhoinghiep;
+	}
+	public int getIddiadiem() {
+		return iddiadiem;
+	}
+	public void setIddiadiem(int iddiadiem) {
+		this.iddiadiem = iddiadiem;
 	}
 	}
