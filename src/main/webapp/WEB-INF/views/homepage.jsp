@@ -341,39 +341,45 @@ $(document).ready(function(){
         </div>
    </div>
    <div class="bottom_content">  
-   	 <h3>CÔNG VIỆC NỔI BẬT</h3>
-     <div class="grid_2" >
+   	 <h3>Our Projects</h3>
+     <div class="grid_2">
+     	
+        
+       
+        <div class="clearfix"> </div>
+     </div>
+     <div class="grid_3">
      <c:forEach items="${listjob1}" var="job">
      	<div class="col-md-4 portfolio-left">
             <div class="portfolio-img event-img">
-                <img src="resources/images/t15.jpg" class="img-responsive" alt=""/>
-                <div class="over-image"></div>
+                <img src="images/t11.jpg" class="img-responsive" alt=""/>
+                 <div class="over-image"></div>
             </div>
             <div class="portfolio-description">
-               <h4><a href="#"></a>${job.getTencongviec()}</h4>
+               <h4><a href="#">${job.getTencongviec()}</a></h4>
                <p>${job.getMota()}</p>
                 <span>
                   <a href="">${job.getIdlinhvuc()}</a>
                   
                 </span>
-                <a href="events.html">
-                    <span><i class="fa fa-chain chain_1"></i>Xem chi tiết</span>
+                <a href="">
+                    <span><i class="fa fa-chain chain_1"></i>VIEW PROJECT</span>
                 </a>
             </div>
             <div class="clearfix"> </div>
         </div>
         </c:forEach>
+		
         
-        </div>
-         
+		
+        <div class="clearfix"> </div>
+     </div>
     </div>
-    <%@include file="_footer.jsp" %>
     
-   
-  
-   
-   
+    <%@include file="_footer.jsp" %>
 <script src="resources/js/jquery.countdown.js"></script>
 <script src="resources/js/script.js"></script>
+
 </body>
+
 </html>	

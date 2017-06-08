@@ -794,6 +794,8 @@ a#profile-tab, a#home-tab, a#profile-tab1{
 .portfolio-left{
     background: #f2f4f8;
     padding:0;
+    margin-bottom: 35px;
+    padding-left: 15px;
 }
 .courses_portfolio .portfolio-item {
     overflow: hidden;
